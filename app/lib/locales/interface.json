@@ -1,0 +1,2982 @@
+{
+  "Bosh sahifa": {
+    "en": "Home",
+    "ru": "Главная"
+  },
+  "Mashqlar": {
+    "en": "Exercises",
+    "ru": "Упражнения"
+  },
+  "O‘yinlar": {
+    "en": "Games",
+    "ru": "Игры"
+  },
+  "Video darslar": {
+    "en": "Video lessons",
+    "ru": "Видеоуроки"
+  },
+  "Ota-onalar uchun": {
+    "en": "For parents",
+    "ru": "Для родителей"
+  },
+  "Metodik kutubxona": {
+    "en": "Resource library",
+    "ru": "Методическая библиотека"
+  },
+  "Kutubxona": {
+    "en": "Library",
+    "ru": "Библиотека"
+  },
+  "Biz haqimizda": {
+    "en": "About us",
+    "ru": "О нас"
+  },
+  "Kirish": {
+    "en": "Sign in",
+    "ru": "Войти"
+  },
+  "Ro‘yxatdan o‘tish": {
+    "en": "Register",
+    "ru": "Регистрация"
+  },
+  "Chiqish": {
+    "en": "Sign out",
+    "ru": "Выйти"
+  },
+  "Kabinet": {
+    "en": "Dashboard",
+    "ru": "Кабинет"
+  },
+  "Kabinetim": {
+    "en": "My dashboard",
+    "ru": "Мой кабинет"
+  },
+  "Shaxsiy kabinet": {
+    "en": "My dashboard",
+    "ru": "Личный кабинет"
+  },
+  "SHAXSIY KABINET": {
+    "en": "MY DASHBOARD",
+    "ru": "ЛИЧНЫЙ КАБИНЕТ"
+  },
+  "Nutqni rivojlantiramiz. Imkoniyatlarni kengaytiramiz.": {
+    "en": "Developing speech. Expanding possibilities.",
+    "ru": "Развиваем речь. Расширяем возможности."
+  },
+  "LOGOPED.UZ · NUTQ VA RIVOJLANISH": {
+    "en": "LOGOPED.UZ · SPEECH AND DEVELOPMENT",
+    "ru": "LOGOPED.UZ · РЕЧЬ И РАЗВИТИЕ"
+  },
+  "Farzandingiz": {
+    "en": "Your child’s",
+    "ru": "Развиваем речь"
+  },
+  "nutqini birgalikda": {
+    "en": "speech develops",
+    "ru": "вашего ребёнка"
+  },
+  "rivojlantiramiz": {
+    "en": "with us, together",
+    "ru": "вместе"
+  },
+  "Maxsus ta’lim oluvchi bolalar uchun logopedik mashqlar, interaktiv o‘yinlar va ota-onalar uchun foydali tavsiyalar.": {
+    "en": "Speech exercises, interactive games and practical guidance for parents of children with special educational needs.",
+    "ru": "Логопедические упражнения, интерактивные игры и полезные советы родителям детей с особыми образовательными потребностями."
+  },
+  "Mashqlarni boshlash": {
+    "en": "Start exercises",
+    "ru": "Начать упражнения"
+  },
+  "Mehr bilan. O‘yin orqali. Birgalikda.": {
+    "en": "With care. Through play. Together.",
+    "ru": "С заботой. Через игру. Вместе."
+  },
+  "Har bir o‘yin —": {
+    "en": "Every game brings",
+    "ru": "Каждая игра —"
+  },
+  "yangi so‘z,": {
+    "en": "a new word,",
+    "ru": "новое слово,"
+  },
+  "yangi kashfiyot!": {
+    "en": "a new discovery!",
+    "ru": "новое открытие!"
+  },
+  "O‘yinlarni ochish": {
+    "en": "Explore games",
+    "ru": "Открыть игры"
+  },
+  "Qiziqarli o‘yinlar bilan o‘rganamiz": {
+    "en": "Learning through enjoyable games",
+    "ru": "Учимся с увлекательными играми"
+  },
+  "Logoped va": {
+    "en": "Therapist and",
+    "ru": "Логопед и"
+  },
+  "ota-ona —": {
+    "en": "parent —",
+    "ru": "родитель —"
+  },
+  "bir jamoa!": {
+    "en": "one team!",
+    "ru": "одна команда!"
+  },
+  "Kabinetga kirish": {
+    "en": "Open dashboard",
+    "ru": "Войти в кабинет"
+  },
+  "Har bir bolaga individual e’tibor": {
+    "en": "Individual attention for every child",
+    "ru": "Индивидуальное внимание каждому ребёнку"
+  },
+  "Artikulyatsiya": {
+    "en": "Articulation",
+    "ru": "Артикуляция"
+  },
+  "Lab va til harakatlarini o‘rganamiz": {
+    "en": "Practising lip and tongue movements",
+    "ru": "Изучаем движения губ и языка"
+  },
+  "Tovushlar": {
+    "en": "Sounds",
+    "ru": "Звуки"
+  },
+  "Tinglaymiz va farqlaymiz": {
+    "en": "Listen and distinguish",
+    "ru": "Слушаем и различаем"
+  },
+  "Topamiz, yig‘amiz, eslab qolamiz": {
+    "en": "Find, build and remember",
+    "ru": "Находим, собираем, запоминаем"
+  },
+  "Nafas mashqlari": {
+    "en": "Breathing exercises",
+    "ru": "Дыхательные упражнения"
+  },
+  "Tinch va qulay mashg‘ulotlar": {
+    "en": "Calm and comfortable practice",
+    "ru": "Спокойные и комфортные занятия"
+  },
+  "Ko‘ramiz va birga bajaramiz": {
+    "en": "Watch and practise together",
+    "ru": "Смотрим и выполняем вместе"
+  },
+  "Uyda ham davom ettiramiz": {
+    "en": "Continue practising at home",
+    "ru": "Продолжаем занятия дома"
+  },
+  "Platformamiz imkoniyatlari": {
+    "en": "What you can do here",
+    "ru": "Возможности платформы"
+  },
+  "boshlash uchun tayyor mashqlar": {
+    "en": "exercises to get started",
+    "ru": "упражнений для начала занятий"
+  },
+  "interaktiv o‘yin yo‘nalishlari": {
+    "en": "interactive game types",
+    "ru": "видов интерактивных игр"
+  },
+  "logoped, ota-ona va bola — bir jamoa": {
+    "en": "therapist, parent and child — one team",
+    "ru": "логопед, родитель и ребёнок — одна команда"
+  },
+  "NEGA LOGOPED.UZ?": {
+    "en": "WHY LOGOPED.UZ?",
+    "ru": "ПОЧЕМУ LOGOPED.UZ?"
+  },
+  "Har bir bolaning": {
+    "en": "We believe in",
+    "ru": "Мы верим"
+  },
+  "imkoniyatiga": {
+    "en": "every child’s",
+    "ru": "в возможности"
+  },
+  "ishonamiz.": {
+    "en": "potential.",
+    "ru": "каждого ребёнка."
+  },
+  "Sodda mashqlar, rag‘batlantiruvchi o‘yinlar va ota-onaning mehri. Nutq rivojlanishidagi har bir kichik qadamni birgalikda qo‘llab-quvvatlaymiz.": {
+    "en": "Simple exercises, encouraging games and a parent’s care. Together, we support every small step in speech development.",
+    "ru": "Простые упражнения, увлекательные игры и забота родителей. Вместе поддерживаем каждый маленький шаг в развитии речи."
+  },
+  "Bugungi mashq": {
+    "en": "Today’s exercise",
+    "ru": "Упражнение дня"
+  },
+  "DAQIQA · BIRGA BAJARAMIZ": {
+    "en": "MINUTES · LET’S PRACTISE TOGETHER",
+    "ru": "МИНУТ · ВЫПОЛНЯЕМ ВМЕСТЕ"
+  },
+  "Boshlash": {
+    "en": "Start",
+    "ru": "Начать"
+  },
+  "Logopedik mashqlar": {
+    "en": "Speech exercises",
+    "ru": "Логопедические упражнения"
+  },
+  "Barcha mashqlar": {
+    "en": "All exercises",
+    "ru": "Все упражнения"
+  },
+  "O‘ynab o‘rganamiz": {
+    "en": "Learn through play",
+    "ru": "Учимся играя"
+  },
+  "O‘ynash": {
+    "en": "Play",
+    "ru": "Играть"
+  },
+  "Barcha o‘yinlar": {
+    "en": "All games",
+    "ru": "Все игры"
+  },
+  "Qanday boshlaymiz?": {
+    "en": "How to get started",
+    "ru": "Как начать?"
+  },
+  "Mashqni tanlang": {
+    "en": "Choose an exercise",
+    "ru": "Выберите упражнение"
+  },
+  "Yosh, qiyinchilik va yo‘nalish bo‘yicha mos mashqni toping.": {
+    "en": "Find an exercise by age, difficulty and category.",
+    "ru": "Подберите упражнение по возрасту, сложности и направлению."
+  },
+  "Birgalikda bajaring": {
+    "en": "Practise together",
+    "ru": "Выполняйте вместе"
+  },
+  "Bosqichma-bosqich ko‘rsatmalarga amal qiling. Taymer yordamida vaqtni kuzating.": {
+    "en": "Follow the step-by-step instructions. Use the timer to track your practice.",
+    "ru": "Следуйте пошаговым инструкциям. Используйте таймер для контроля времени."
+  },
+  "Natijani qayd eting": {
+    "en": "Save the result",
+    "ru": "Сохраните результат"
+  },
+  "Bajarilgan mashq va o‘yinlar shaxsiy tarixingizda saqlanadi.": {
+    "en": "Completed exercises and games are saved to your personal history.",
+    "ru": "Выполненные упражнения и игры сохраняются в личной истории."
+  },
+  "Logoped bilan davom eting": {
+    "en": "Continue with your therapist",
+    "ru": "Продолжайте с логопедом"
+  },
+  "Kabinetda individual topshiriqlar, jadval va kuzatuvlarni ko‘ring.": {
+    "en": "See your individual tasks, schedule and observations in your dashboard.",
+    "ru": "В кабинете доступны индивидуальные задания, расписание и наблюдения."
+  },
+  "Birgalikda boshlaymiz!": {
+    "en": "Let’s begin together!",
+    "ru": "Начнём вместе!"
+  },
+  "Farzandingiz uchun foydali vaqt ajrating.": {
+    "en": "Make time for your child’s development.",
+    "ru": "Уделите время развитию ребёнка."
+  },
+  "Birinchi kichik qadamni bugun qo‘ying.": {
+    "en": "Take the first small step today.",
+    "ru": "Сделайте первый маленький шаг сегодня."
+  },
+  "Ko‘p beriladigan savollar": {
+    "en": "Frequently asked questions",
+    "ru": "Частые вопросы"
+  },
+  "Mashqlarni kim bilan bajarish kerak?": {
+    "en": "Who should help with the exercises?",
+    "ru": "С кем выполнять упражнения?"
+  },
+  "Mashg‘ulot qancha davom etadi?": {
+    "en": "How long does a session take?",
+    "ru": "Сколько длится занятие?"
+  },
+  "Uy vazifalarini qayerdan ko‘raman?": {
+    "en": "Where can I find homework?",
+    "ru": "Где найти домашние задания?"
+  },
+  "Natijalar qanday hisoblanadi?": {
+    "en": "How are results calculated?",
+    "ru": "Как рассчитываются результаты?"
+  },
+  "Materiallarni yuklab olsa bo‘ladimi?": {
+    "en": "Can I download materials?",
+    "ru": "Можно ли скачать материалы?"
+  },
+  "BIRGA O‘RGANAMIZ": {
+    "en": "LET’S LEARN TOGETHER",
+    "ru": "УЧИМСЯ ВМЕСТЕ"
+  },
+  "Har kuni kichik qadam. Farzandingizga mos mashqni tanlang.": {
+    "en": "A small step every day. Choose an exercise for your child.",
+    "ru": "Маленький шаг каждый день. Выберите упражнение для ребёнка."
+  },
+  "O‘yin, quvonch va yangi kashfiyotlar.": {
+    "en": "Play, joy and new discoveries.",
+    "ru": "Игра, радость и новые открытия."
+  },
+  "O‘rganish va mashg‘ulotlar uchun foydali materiallar.": {
+    "en": "Useful materials for learning and practice.",
+    "ru": "Полезные материалы для обучения и занятий."
+  },
+  "Uyda ham davom ettiring!": {
+    "en": "Keep practising at home!",
+    "ru": "Продолжайте заниматься дома!"
+  },
+  "Tanlanganlar": {
+    "en": "Favourites",
+    "ru": "Избранное"
+  },
+  "Mashq qidirish…": {
+    "en": "Search exercises…",
+    "ru": "Поиск упражнений…"
+  },
+  "Barchasi": {
+    "en": "All",
+    "ru": "Все"
+  },
+  "Barcha yoshlar": {
+    "en": "All ages",
+    "ru": "Все возрасты"
+  },
+  "Yosh": {
+    "en": "Age",
+    "ru": "Возраст"
+  },
+  "Daraja": {
+    "en": "Level",
+    "ru": "Уровень"
+  },
+  "Oson": {
+    "en": "Easy",
+    "ru": "Легко"
+  },
+  "O‘rta": {
+    "en": "Intermediate",
+    "ru": "Средне"
+  },
+  "Tovush": {
+    "en": "Sound",
+    "ru": "Звук"
+  },
+  "Tovushlar bilan ishlash": {
+    "en": "Practising sounds",
+    "ru": "Работа со звуками"
+  },
+  "Artikulyatsion gimnastika": {
+    "en": "Articulation exercises",
+    "ru": "Артикуляционная гимнастика"
+  },
+  "Fonematik eshituv": {
+    "en": "Phonemic awareness",
+    "ru": "Фонематический слух"
+  },
+  "Tovushlarni talaffuz qilish": {
+    "en": "Sound pronunciation",
+    "ru": "Произношение звуков"
+  },
+  "Lug‘at boyligi": {
+    "en": "Vocabulary",
+    "ru": "Словарный запас"
+  },
+  "Grammatik nutq": {
+    "en": "Grammar",
+    "ru": "Грамматический строй речи"
+  },
+  "Bog‘langan nutq": {
+    "en": "Connected speech",
+    "ru": "Связная речь"
+  },
+  "Mayda motorika": {
+    "en": "Fine motor skills",
+    "ru": "Мелкая моторика"
+  },
+  "Diqqat va xotira": {
+    "en": "Attention and memory",
+    "ru": "Внимание и память"
+  },
+  "O‘qish": {
+    "en": "Read",
+    "ru": "Читать"
+  },
+  "OTA-ONALAR UCHUN": {
+    "en": "FOR PARENTS",
+    "ru": "ДЛЯ РОДИТЕЛЕЙ"
+  },
+  "Video kutubxonasi tayyorlanmoqda": {
+    "en": "The video library is being prepared",
+    "ru": "Видеобиблиотека готовится"
+  },
+  "Logoped tasdiqlagan darslar qo‘shilgach shu yerda ko‘rinadi.": {
+    "en": "Approved lessons will appear here once added.",
+    "ru": "Здесь появятся уроки, одобренные логопедом."
+  },
+  "Birinchi videoni qo‘shish": {
+    "en": "Add the first video",
+    "ru": "Добавить первое видео"
+  },
+  "Faylni yuklab olish": {
+    "en": "Download file",
+    "ru": "Скачать файл"
+  },
+  "Ko‘rish / PDF saqlash": {
+    "en": "View / save PDF",
+    "ru": "Просмотр / сохранить PDF"
+  },
+  "Ko‘rish va chop etish uchun metodik material.": {
+    "en": "A resource you can view and print.",
+    "ru": "Методический материал для просмотра и печати."
+  },
+  "Mashg‘ulot rejasi": {
+    "en": "Session plan",
+    "ru": "План занятия"
+  },
+  "Mevalar kartochkalari": {
+    "en": "Fruit flashcards",
+    "ru": "Карточки с фруктами"
+  },
+  "Aloqa": {
+    "en": "Contact",
+    "ru": "Контакты"
+  },
+  "Aloqa ma’lumotlari administrator tomonidan qo‘shiladi.": {
+    "en": "Contact details will be added by the administrator.",
+    "ru": "Контактные данные добавит администратор."
+  },
+  "Maxfiylik": {
+    "en": "Privacy",
+    "ru": "Конфиденциальность"
+  },
+  "Maxfiylik va foydalanish": {
+    "en": "Privacy and use",
+    "ru": "Конфиденциальность и использование"
+  },
+  "Yopish": {
+    "en": "Close",
+    "ru": "Закрыть"
+  },
+  "Batafsil": {
+    "en": "Details",
+    "ru": "Подробнее"
+  },
+  "Saqlash": {
+    "en": "Save",
+    "ru": "Сохранить"
+  },
+  "Saqlanmoqda…": {
+    "en": "Saving…",
+    "ru": "Сохранение…"
+  },
+  "Yuklanmoqda…": {
+    "en": "Loading…",
+    "ru": "Загрузка…"
+  },
+  "Qayta urinish": {
+    "en": "Try again",
+    "ru": "Повторить"
+  },
+  "Qayta tekshirish": {
+    "en": "Check again",
+    "ru": "Проверить снова"
+  },
+  "Bekor qilish": {
+    "en": "Cancel",
+    "ru": "Отмена"
+  },
+  "Tahrirlash": {
+    "en": "Edit",
+    "ru": "Изменить"
+  },
+  "Qo‘shish": {
+    "en": "Add",
+    "ru": "Добавить"
+  },
+  "Tanlang": {
+    "en": "Select",
+    "ru": "Выберите"
+  },
+  "Bajarildi": {
+    "en": "Completed",
+    "ru": "Выполнено"
+  },
+  "Bajarildi ✓": {
+    "en": "Completed ✓",
+    "ru": "Выполнено ✓"
+  },
+  "Yangi": {
+    "en": "New",
+    "ru": "Новое"
+  },
+  "Bajarilmoqda": {
+    "en": "In progress",
+    "ru": "Выполняется"
+  },
+  "Logoped tekshirdi": {
+    "en": "Reviewed by therapist",
+    "ru": "Проверено логопедом"
+  },
+  "Rejalashtirilgan": {
+    "en": "Scheduled",
+    "ru": "Запланировано"
+  },
+  "O‘tkazildi": {
+    "en": "Held",
+    "ru": "Проведено"
+  },
+  "Bekor qilindi": {
+    "en": "Cancelled",
+    "ru": "Отменено"
+  },
+  "Faol": {
+    "en": "Active",
+    "ru": "Активно"
+  },
+  "Arxiv": {
+    "en": "Archive",
+    "ru": "Архив"
+  },
+  "Arxivlangan": {
+    "en": "Archived",
+    "ru": "В архиве"
+  },
+  "Arxivlash": {
+    "en": "Archive",
+    "ru": "В архив"
+  },
+  "Nashr qilish": {
+    "en": "Publish",
+    "ru": "Опубликовать"
+  },
+  "Nashr qilingan": {
+    "en": "Published",
+    "ru": "Опубликовано"
+  },
+  "Yashirilgan": {
+    "en": "Hidden",
+    "ru": "Скрыто"
+  },
+  "Siz": {
+    "en": "You",
+    "ru": "Вы"
+  },
+  "Administrator": {
+    "en": "Administrator",
+    "ru": "Администратор"
+  },
+  "Logoped": {
+    "en": "Speech therapist",
+    "ru": "Логопед"
+  },
+  "Ota-ona": {
+    "en": "Parent",
+    "ru": "Родитель"
+  },
+  "O‘quvchi": {
+    "en": "Student",
+    "ru": "Ученик"
+  },
+  "Tasdiqlash kutilmoqda": {
+    "en": "Awaiting approval",
+    "ru": "Ожидает подтверждения"
+  },
+  "Umumiy": {
+    "en": "Overview",
+    "ru": "Обзор"
+  },
+  "Foydalanuvchilar": {
+    "en": "Users",
+    "ru": "Пользователи"
+  },
+  "O‘quvchilar": {
+    "en": "Students",
+    "ru": "Ученики"
+  },
+  "Chat": {
+    "en": "Chat",
+    "ru": "Чат"
+  },
+  "Uyga vazifalar": {
+    "en": "Homework",
+    "ru": "Домашние задания"
+  },
+  "Uy vazifalari": {
+    "en": "Homework",
+    "ru": "Домашние задания"
+  },
+  "Baholar": {
+    "en": "Grades",
+    "ru": "Оценки"
+  },
+  "Izohlar": {
+    "en": "Comments",
+    "ru": "Комментарии"
+  },
+  "Kontent": {
+    "en": "Content",
+    "ru": "Контент"
+  },
+  "Fayllar": {
+    "en": "Files",
+    "ru": "Файлы"
+  },
+  "Sozlamalar": {
+    "en": "Settings",
+    "ru": "Настройки"
+  },
+  "O‘zgarishlar jurnali": {
+    "en": "Activity log",
+    "ru": "Журнал изменений"
+  },
+  "Boshqaruv": {
+    "en": "Management",
+    "ru": "Управление"
+  },
+  "BOSHQARUV MARKAZI": {
+    "en": "MANAGEMENT CENTRE",
+    "ru": "ЦЕНТР УПРАВЛЕНИЯ"
+  },
+  "Administrator paneli": {
+    "en": "Administrator panel",
+    "ru": "Панель администратора"
+  },
+  "LOGOPED.UZ / BOSHQARUV": {
+    "en": "LOGOPED.UZ / MANAGEMENT",
+    "ru": "LOGOPED.UZ / УПРАВЛЕНИЕ"
+  },
+  "Platformadagi barcha asosiy ishlar bir joyda.": {
+    "en": "All your main tasks in one place.",
+    "ru": "Все основные задачи в одном месте."
+  },
+  "Ma’lumotlarni boshqaring va o‘zgarishlarni saqlang.": {
+    "en": "Manage information and save your changes.",
+    "ru": "Управляйте данными и сохраняйте изменения."
+  },
+  "Saytga qaytish": {
+    "en": "Back to website",
+    "ru": "Вернуться на сайт"
+  },
+  "Logoped kabineti": {
+    "en": "Therapist dashboard",
+    "ru": "Кабинет логопеда"
+  },
+  "Yangi ro‘yxatdan o‘tish so‘rovlari": {
+    "en": "New registration requests",
+    "ru": "Новые заявки на регистрацию"
+  },
+  "Barchasini ko‘rish": {
+    "en": "View all",
+    "ru": "Посмотреть все"
+  },
+  "Foydalanuvchi": {
+    "en": "User",
+    "ru": "Пользователь"
+  },
+  "So‘ralgan rol": {
+    "en": "Requested role",
+    "ru": "Запрошенная роль"
+  },
+  "Amaldagi rol": {
+    "en": "Current role",
+    "ru": "Текущая роль"
+  },
+  "Amal": {
+    "en": "Action",
+    "ru": "Действие"
+  },
+  "Tasdiqlash": {
+    "en": "Approve",
+    "ru": "Подтвердить"
+  },
+  "Foydalanuvchilar topilmadi.": {
+    "en": "No users found.",
+    "ru": "Пользователи не найдены."
+  },
+  "Ism yoki elektron pochta…": {
+    "en": "Name or email…",
+    "ru": "Имя или электронная почта…"
+  },
+  "Foydalanuvchi qidirish": {
+    "en": "Search users",
+    "ru": "Поиск пользователей"
+  },
+  "O‘quvchini qidirish…": {
+    "en": "Search students…",
+    "ru": "Поиск учеников…"
+  },
+  "O‘quvchi qidirish": {
+    "en": "Search students",
+    "ru": "Поиск учеников"
+  },
+  "O‘quvchi qo‘shish": {
+    "en": "Add student",
+    "ru": "Добавить ученика"
+  },
+  "Birinchi o‘quvchi profilini qo‘shing.": {
+    "en": "Add your first student profile.",
+    "ru": "Добавьте профиль первого ученика."
+  },
+  "Yangi kontent": {
+    "en": "New content",
+    "ru": "Новый материал"
+  },
+  "Kontent turi": {
+    "en": "Content type",
+    "ru": "Тип материала"
+  },
+  "Kontent qidirish": {
+    "en": "Search content",
+    "ru": "Поиск материалов"
+  },
+  "Kontentni qidirish…": {
+    "en": "Search content…",
+    "ru": "Поиск материалов…"
+  },
+  "Nomi": {
+    "en": "Name",
+    "ru": "Название"
+  },
+  "Kategoriya": {
+    "en": "Category",
+    "ru": "Категория"
+  },
+  "Holat": {
+    "en": "Status",
+    "ru": "Статус"
+  },
+  "Amallar": {
+    "en": "Actions",
+    "ru": "Действия"
+  },
+  "Nusxa yaratish": {
+    "en": "Create a copy",
+    "ru": "Создать копию"
+  },
+  "Hozircha bu turdagi kontent yo‘q.": {
+    "en": "No content of this type yet.",
+    "ru": "Материалов этого типа пока нет."
+  },
+  "Mashq qo‘shish": {
+    "en": "Add exercise",
+    "ru": "Добавить упражнение"
+  },
+  "Yangi o‘quv materialini tayyorlang.": {
+    "en": "Create a new learning resource.",
+    "ru": "Создайте новый учебный материал."
+  },
+  "Fayl yuklash": {
+    "en": "Upload file",
+    "ru": "Загрузить файл"
+  },
+  "PDF, rasm va audio materiallar.": {
+    "en": "PDF, images and audio resources.",
+    "ru": "PDF, изображения и аудиоматериалы."
+  },
+  "Bosh sahifadagi mashqni tanlang.": {
+    "en": "Choose the exercise on the home page.",
+    "ru": "Выберите упражнение для главной страницы."
+  },
+  "Ota-onalar bilan chat": {
+    "en": "Chat with parents",
+    "ru": "Чат с родителями"
+  },
+  "Shaxsiy xabarlar va savollarga javob.": {
+    "en": "Private messages and answers to questions.",
+    "ru": "Личные сообщения и ответы на вопросы."
+  },
+  "Uyga vazifa berish": {
+    "en": "Assign homework",
+    "ru": "Задать домашнюю работу"
+  },
+  "Topshiriq, muddat va tekshiruv.": {
+    "en": "Task, deadline and review.",
+    "ru": "Задание, срок и проверка."
+  },
+  "Baho qo‘yish": {
+    "en": "Give a grade",
+    "ru": "Поставить оценку"
+  },
+  "Mezon bo‘yicha 1–5 ball.": {
+    "en": "1–5 points against a criterion.",
+    "ru": "От 1 до 5 баллов по критерию."
+  },
+  "Izoh yozish": {
+    "en": "Write a comment",
+    "ru": "Написать комментарий"
+  },
+  "Ota-onaga tavsiya va fikr-mulohaza.": {
+    "en": "Advice and feedback for the parent.",
+    "ru": "Рекомендации и обратная связь родителю."
+  },
+  "Vazifa berish": {
+    "en": "Assign task",
+    "ru": "Дать задание"
+  },
+  "Profilni tahrirlash": {
+    "en": "Edit profile",
+    "ru": "Изменить профиль"
+  },
+  "Yuklangan fayllar": {
+    "en": "Uploaded files",
+    "ru": "Загруженные файлы"
+  },
+  "Faqat logopedlar": {
+    "en": "Therapists only",
+    "ru": "Только логопеды"
+  },
+  "Tasdiqlangan foydalanuvchilar": {
+    "en": "Approved users",
+    "ru": "Подтверждённые пользователи"
+  },
+  "Yuklab olish": {
+    "en": "Download",
+    "ru": "Скачать"
+  },
+  "Yuklangan fayllar shu yerda ko‘rinadi.": {
+    "en": "Uploaded files will appear here.",
+    "ru": "Загруженные файлы появятся здесь."
+  },
+  "Vakolatlarni ajratish": {
+    "en": "Access permissions",
+    "ru": "Разграничение полномочий"
+  },
+  "O‘zimga biriktirilgan o‘quvchilar uchun logoped vakolati": {
+    "en": "Therapist access to my assigned students",
+    "ru": "Полномочия логопеда для моих учеников"
+  },
+  "Bosh sahifada barcha foydalanuvchilarga ko‘rsatiladigan mashq.": {
+    "en": "An exercise shown on the home page for all users.",
+    "ru": "Упражнение на главной странице для всех пользователей."
+  },
+  "Sanaga rejalashtirish": {
+    "en": "Schedule for a date",
+    "ru": "Запланировать на дату"
+  },
+  "Sana": {
+    "en": "Date",
+    "ru": "Дата"
+  },
+  "Mashq": {
+    "en": "Exercise",
+    "ru": "Упражнение"
+  },
+  "Rejalashtirish": {
+    "en": "Schedule",
+    "ru": "Запланировать"
+  },
+  "Rejadan olish": {
+    "en": "Remove from schedule",
+    "ru": "Убрать из плана"
+  },
+  "Yangi material haqida bildirishnoma": {
+    "en": "New resource announcement",
+    "ru": "Уведомление о новом материале"
+  },
+  "Xabar tasdiqlangan katta foydalanuvchilarga ichki bildirishnoma sifatida yuboriladi.": {
+    "en": "An in-app notification is sent to approved adult users.",
+    "ru": "Подтверждённым взрослым пользователям отправляется внутреннее уведомление."
+  },
+  "Xabar": {
+    "en": "Message",
+    "ru": "Сообщение"
+  },
+  "Yangi mashq yoki video haqida…": {
+    "en": "About a new exercise or video…",
+    "ru": "О новом упражнении или видео…"
+  },
+  "Bildirishnoma yuborish": {
+    "en": "Send notification",
+    "ru": "Отправить уведомление"
+  },
+  "Aloqa va biz haqimizda": {
+    "en": "Contact and about us",
+    "ru": "Контакты и информация о нас"
+  },
+  "Aloqa elektron pochtasi": {
+    "en": "Contact email",
+    "ru": "Контактная электронная почта"
+  },
+  "Telefon": {
+    "en": "Phone",
+    "ru": "Телефон"
+  },
+  "Platforma haqida": {
+    "en": "About the platform",
+    "ru": "О платформе"
+  },
+  "Vaqt": {
+    "en": "Time",
+    "ru": "Время"
+  },
+  "Yozuv": {
+    "en": "Record",
+    "ru": "Запись"
+  },
+  "So‘nggi 50 ta o‘zgarish.": {
+    "en": "The last 50 changes.",
+    "ru": "Последние 50 изменений."
+  },
+  "O‘zgarish saqlandi": {
+    "en": "Changes saved",
+    "ru": "Изменения сохранены"
+  },
+  "O‘QUVCHI PROFILI": {
+    "en": "STUDENT PROFILE",
+    "ru": "ПРОФИЛЬ УЧЕНИКА"
+  },
+  "Yangi yozuv": {
+    "en": "New record",
+    "ru": "Новая запись"
+  },
+  "Ism-familiya": {
+    "en": "Full name",
+    "ru": "Имя и фамилия"
+  },
+  "Sinf / guruh": {
+    "en": "Class / group",
+    "ru": "Класс / группа"
+  },
+  "Individual maqsad": {
+    "en": "Individual goal",
+    "ru": "Индивидуальная цель"
+  },
+  "Qonuniy vakilning roziligi olingan": {
+    "en": "Consent obtained from the legal representative",
+    "ru": "Согласие законного представителя получено"
+  },
+  "Maqolalar": {
+    "en": "Articles",
+    "ru": "Статьи"
+  },
+  "Metodik materiallar": {
+    "en": "Teaching resources",
+    "ru": "Методические материалы"
+  },
+  "O‘yin savollari": {
+    "en": "Game questions",
+    "ru": "Вопросы для игр"
+  },
+  "O‘yin": {
+    "en": "Game",
+    "ru": "Игра"
+  },
+  "Savol matni": {
+    "en": "Question text",
+    "ru": "Текст вопроса"
+  },
+  "Javoblar: har biri alohida qatorda": {
+    "en": "Answers: one per line",
+    "ru": "Ответы: каждый с новой строки"
+  },
+  "To‘g‘ri javob raqami (0 dan boshlanadi)": {
+    "en": "Correct answer index (starts at 0)",
+    "ru": "Номер правильного ответа (начиная с 0)"
+  },
+  "Eshitiladigan matn (ixtiyoriy)": {
+    "en": "Text to speak (optional)",
+    "ru": "Озвучиваемый текст (необязательно)"
+  },
+  "Audio fayl": {
+    "en": "Audio file",
+    "ru": "Аудиофайл"
+  },
+  "Qurilma ovozi": {
+    "en": "Device voice",
+    "ru": "Голос устройства"
+  },
+  "Maqsadi": {
+    "en": "Objective",
+    "ru": "Цель"
+  },
+  "Tovush (ixtiyoriy)": {
+    "en": "Sound (optional)",
+    "ru": "Звук (необязательно)"
+  },
+  "Kerakli jihozlar": {
+    "en": "Materials needed",
+    "ru": "Необходимые материалы"
+  },
+  "Kerakli jihozlar:": {
+    "en": "Materials needed:",
+    "ru": "Необходимые материалы:"
+  },
+  "Qiyinchilik": {
+    "en": "Difficulty",
+    "ru": "Сложность"
+  },
+  "Davomiylik (daqiqa)": {
+    "en": "Duration (minutes)",
+    "ru": "Длительность (минуты)"
+  },
+  "Bosqichlar (har biri yangi qatorda)": {
+    "en": "Steps (one per line)",
+    "ru": "Этапы (каждый с новой строки)"
+  },
+  "Rasm, audio yoki video": {
+    "en": "Image, audio or video",
+    "ru": "Изображение, аудио или видео"
+  },
+  "Fayl yo‘q": {
+    "en": "No file",
+    "ru": "Нет файла"
+  },
+  "Matn / tushuntirish": {
+    "en": "Text / explanation",
+    "ru": "Текст / пояснение"
+  },
+  "Bo‘g‘inlar": {
+    "en": "Syllables",
+    "ru": "Слоги"
+  },
+  "So‘z boshida": {
+    "en": "At the start of a word",
+    "ru": "В начале слова"
+  },
+  "So‘z o‘rtasida": {
+    "en": "In the middle of a word",
+    "ru": "В середине слова"
+  },
+  "So‘z oxirida": {
+    "en": "At the end of a word",
+    "ru": "В конце слова"
+  },
+  "Gap namunasi": {
+    "en": "Example sentence",
+    "ru": "Пример предложения"
+  },
+  "Audio / video fayl": {
+    "en": "Audio / video file",
+    "ru": "Аудио / видеофайл"
+  },
+  "YouTube havolasi": {
+    "en": "YouTube link",
+    "ru": "Ссылка на YouTube"
+  },
+  "Ko‘rish huquqi": {
+    "en": "Viewing access",
+    "ru": "Доступ к просмотру"
+  },
+  "Saytga kiruvchilar uchun ochiq": {
+    "en": "Available to site visitors",
+    "ru": "Доступно посетителям сайта"
+  },
+  "Uyga vazifa": {
+    "en": "Homework",
+    "ru": "Домашнее задание"
+  },
+  "Baho": {
+    "en": "Grade",
+    "ru": "Оценка"
+  },
+  "Izoh": {
+    "en": "Comment",
+    "ru": "Комментарий"
+  },
+  "Har bir harakatni qadrlaymiz": {
+    "en": "Every effort matters",
+    "ru": "Ценим каждое старание"
+  },
+  "Ota-onaga foydali izoh": {
+    "en": "Helpful feedback for parents",
+    "ru": "Полезный комментарий родителю"
+  },
+  "Uyda davom ettiramiz": {
+    "en": "Continue at home",
+    "ru": "Продолжаем дома"
+  },
+  "Aniq mezon asosida 1–5 ball va shaxsiy fikr-mulohaza.": {
+    "en": "1–5 points based on a clear criterion, with individual feedback.",
+    "ru": "От 1 до 5 баллов по понятному критерию и индивидуальная обратная связь."
+  },
+  "Bu izohni o‘quvchining biriktirilgan ota-onasi ko‘radi.": {
+    "en": "This comment is visible to the student’s linked parent.",
+    "ru": "Комментарий виден привязанному родителю ученика."
+  },
+  "Topshiriq bering, javobni ko‘ring va tekshiruv izohini yozing.": {
+    "en": "Assign a task, view the answer and add review feedback.",
+    "ru": "Дайте задание, посмотрите ответ и напишите комментарий к проверке."
+  },
+  "Barcha biriktirilgan o‘quvchilar": {
+    "en": "All assigned students",
+    "ru": "Все прикреплённые ученики"
+  },
+  "Mavzu bo‘yicha qidirish": {
+    "en": "Search by topic",
+    "ru": "Поиск по теме"
+  },
+  "Avval o‘quvchi qo‘shing": {
+    "en": "Add a student first",
+    "ru": "Сначала добавьте ученика"
+  },
+  "Keyin unga vazifa, baho va izoh biriktira olasiz.": {
+    "en": "You can then add tasks, grades and comments.",
+    "ru": "Затем можно добавлять задания, оценки и комментарии."
+  },
+  "O‘quvchilar bo‘limi": {
+    "en": "Students section",
+    "ru": "Раздел учеников"
+  },
+  "Mavzu": {
+    "en": "Topic",
+    "ru": "Тема"
+  },
+  "Baholash mezoni": {
+    "en": "Assessment criterion",
+    "ru": "Критерий оценки"
+  },
+  "Masalan, topshiriq bosqichlarini bajarish": {
+    "en": "For example, completing the task steps",
+    "ru": "Например, выполнение этапов задания"
+  },
+  "Tegishli uy vazifasi (ixtiyoriy)": {
+    "en": "Related homework (optional)",
+    "ru": "Связанное домашнее задание (необязательно)"
+  },
+  "Alohida mashg‘ulot": {
+    "en": "Separate session",
+    "ru": "Отдельное занятие"
+  },
+  "Ota-ona uchun izoh": {
+    "en": "Comment for the parent",
+    "ru": "Комментарий для родителя"
+  },
+  "Izoh matni": {
+    "en": "Comment text",
+    "ru": "Текст комментария"
+  },
+  "Nima yaxshi bajarildi? Uyda nimaga e’tibor berish kerak?": {
+    "en": "What went well? What should be practised at home?",
+    "ru": "Что получилось хорошо? На что обратить внимание дома?"
+  },
+  "Tavsiya etilgan mashq": {
+    "en": "Suggested exercise",
+    "ru": "Рекомендованное упражнение"
+  },
+  "Alohida topshiriq": {
+    "en": "Separate task",
+    "ru": "Отдельное задание"
+  },
+  "Bajarish bo‘yicha ko‘rsatma": {
+    "en": "Instructions",
+    "ru": "Инструкция по выполнению"
+  },
+  "Muddat": {
+    "en": "Deadline",
+    "ru": "Срок"
+  },
+  "Davomiyligi (daqiqa)": {
+    "en": "Duration (minutes)",
+    "ru": "Длительность (минуты)"
+  },
+  "O‘quvchi javobi:": {
+    "en": "Student’s answer:",
+    "ru": "Ответ ученика:"
+  },
+  "Tekshiruv izohi": {
+    "en": "Review feedback",
+    "ru": "Комментарий к проверке"
+  },
+  "Tekshiruv izohi:": {
+    "en": "Review feedback:",
+    "ru": "Комментарий к проверке:"
+  },
+  "Vazifani yuborish": {
+    "en": "Send homework",
+    "ru": "Отправить задание"
+  },
+  "Bahoni saqlash": {
+    "en": "Save grade",
+    "ru": "Сохранить оценку"
+  },
+  "Izohni yuborish": {
+    "en": "Send comment",
+    "ru": "Отправить комментарий"
+  },
+  "Arxivlangan o‘quvchi": {
+    "en": "Archived student",
+    "ru": "Ученик в архиве"
+  },
+  "Javob:": {
+    "en": "Answer:",
+    "ru": "Ответ:"
+  },
+  "Mezon:": {
+    "en": "Criterion:",
+    "ru": "Критерий:"
+  },
+  "Hozircha baho qo‘yilmagan": {
+    "en": "No grades yet",
+    "ru": "Оценок пока нет"
+  },
+  "Mashg‘ulot baholangach, natija shu yerda ko‘rinadi.": {
+    "en": "The result will appear here after the session is graded.",
+    "ru": "Результат появится здесь после оценки занятия."
+  },
+  "Baholar alohida mashg‘ulot uchun 1–5 ballik mezonda qo‘yiladi. Ular tashxis yoki nutq rivojlanish foizi emas.": {
+    "en": "Grades use a 1–5 scale for individual sessions. They are not a diagnosis or a speech development percentage.",
+    "ru": "Оценки выставляются по шкале 1–5 за отдельное занятие. Это не диагноз и не процент речевого развития."
+  },
+  "O‘quvchilar bilan ishlash vakolati": {
+    "en": "Student care permission",
+    "ru": "Доступ к работе с учениками"
+  },
+  "O‘quvchilarim bilan ishlashni yoqish": {
+    "en": "Enable access to my students",
+    "ru": "Включить работу с моими учениками"
+  },
+  "Faollashtirilmoqda…": {
+    "en": "Enabling…",
+    "ru": "Активация…"
+  },
+  "Vakolat sozlamalari": {
+    "en": "Permission settings",
+    "ru": "Настройки полномочий"
+  },
+  "Birgalikdagi rivojlanish": {
+    "en": "Growing together",
+    "ru": "Развиваемся вместе"
+  },
+  "Hisobingizga kirib, mashg‘ulotlarni kuzating.": {
+    "en": "Sign in to follow your sessions.",
+    "ru": "Войдите в аккаунт, чтобы следить за занятиями."
+  },
+  "ChatGPT orqali kirish": {
+    "en": "Sign in with ChatGPT",
+    "ru": "Войти через ChatGPT"
+  },
+  "Platformani sozlash": {
+    "en": "Set up the platform",
+    "ru": "Настроить платформу"
+  },
+  "Administrator sifatida boshlash": {
+    "en": "Start as administrator",
+    "ru": "Начать как администратор"
+  },
+  "Hisobni tasdiqlash": {
+    "en": "Account approval",
+    "ru": "Подтверждение аккаунта"
+  },
+  "Faol vazifalar": {
+    "en": "Active tasks",
+    "ru": "Активные задания"
+  },
+  "Logoped tekshirgan": {
+    "en": "Reviewed by therapist",
+    "ru": "Проверено логопедом"
+  },
+  "Bugungi e’tibor": {
+    "en": "Today’s focus",
+    "ru": "Сегодня в фокусе"
+  },
+  "Hozircha topshiriqlar yo‘q": {
+    "en": "No tasks yet",
+    "ru": "Заданий пока нет"
+  },
+  "Yangi topshiriq va izohlar shu kabinetda ko‘rinadi.": {
+    "en": "New tasks and comments will appear here.",
+    "ru": "Новые задания и комментарии появятся здесь."
+  },
+  "Takliflar": {
+    "en": "Invitations",
+    "ru": "Приглашения"
+  },
+  "Yutuqlarim": {
+    "en": "My achievements",
+    "ru": "Мои достижения"
+  },
+  "O‘quvchilar ro‘yxati": {
+    "en": "Student list",
+    "ru": "Список учеников"
+  },
+  "Hali o‘quvchi biriktirilmagan.": {
+    "en": "No student assigned yet.",
+    "ru": "Ученик ещё не прикреплён."
+  },
+  "Kontent va foydalanuvchilar boshqaruvi": {
+    "en": "Content and user management",
+    "ru": "Управление материалами и пользователями"
+  },
+  "Admin panelni ochish": {
+    "en": "Open admin panel",
+    "ru": "Открыть панель администратора"
+  },
+  "Mashg‘ulotlar": {
+    "en": "Sessions",
+    "ru": "Занятия"
+  },
+  "Natijalar": {
+    "en": "Results",
+    "ru": "Результаты"
+  },
+  "Tovush holatlari": {
+    "en": "Sound skills",
+    "ru": "Освоение звуков"
+  },
+  "Natijalarni CSV yuklash": {
+    "en": "Download results as CSV",
+    "ru": "Скачать результаты в CSV"
+  },
+  "Tavsiya etilgan mashqni ochish": {
+    "en": "Open suggested exercise",
+    "ru": "Открыть рекомендованное упражнение"
+  },
+  "Holatni yangilash": {
+    "en": "Update status",
+    "ru": "Обновить статус"
+  },
+  "Logoped tekshiruvi:": {
+    "en": "Therapist review:",
+    "ru": "Проверка логопеда:"
+  },
+  "Ota-ona:": {
+    "en": "Parent:",
+    "ru": "Родитель:"
+  },
+  "Hisoblarni taklif orqali bog‘lash": {
+    "en": "Link accounts by invitation",
+    "ru": "Связать аккаунты по приглашению"
+  },
+  "Hisob turi": {
+    "en": "Account type",
+    "ru": "Тип аккаунта"
+  },
+  "Taklif oluvchining elektron pochtasi": {
+    "en": "Recipient’s email",
+    "ru": "Электронная почта получателя"
+  },
+  "Taklif havolasini yaratish": {
+    "en": "Create invitation link",
+    "ru": "Создать ссылку-приглашение"
+  },
+  "Ulashish uchun havola": {
+    "en": "Link to share",
+    "ru": "Ссылка для отправки"
+  },
+  "Nusxalash": {
+    "en": "Copy",
+    "ru": "Копировать"
+  },
+  "Qabul qilingan": {
+    "en": "Accepted",
+    "ru": "Принято"
+  },
+  "Bekor qilingan": {
+    "en": "Cancelled",
+    "ru": "Отменено"
+  },
+  "Muddati tugagan": {
+    "en": "Expired",
+    "ru": "Срок истёк"
+  },
+  "Qabul qilish kutilmoqda": {
+    "en": "Awaiting acceptance",
+    "ru": "Ожидает принятия"
+  },
+  "Guruh mashg‘ulotini rejalashtirish": {
+    "en": "Schedule a group session",
+    "ru": "Запланировать групповое занятие"
+  },
+  "Guruh nomi": {
+    "en": "Group name",
+    "ru": "Название группы"
+  },
+  "Qatnashadigan o‘quvchilar": {
+    "en": "Participating students",
+    "ru": "Участвующие ученики"
+  },
+  "Jadvalga saqlash": {
+    "en": "Save to schedule",
+    "ru": "Сохранить в расписание"
+  },
+  "Bugun birga o‘rganamiz!": {
+    "en": "Let’s learn together today!",
+    "ru": "Сегодня учимся вместе!"
+  },
+  "Har bir urinish — yangi qadam.": {
+    "en": "Every attempt is a new step.",
+    "ru": "Каждая попытка — новый шаг."
+  },
+  "Mening topshiriqlarim": {
+    "en": "My tasks",
+    "ru": "Мои задания"
+  },
+  "Baholarim": {
+    "en": "My grades",
+    "ru": "Мои оценки"
+  },
+  "Bajaramiz": {
+    "en": "Let’s do it",
+    "ru": "Выполняем"
+  },
+  "Hozircha topshiriq yo‘q. O‘yinlardan birini sinab ko‘ring!": {
+    "en": "No tasks yet. Try one of the games!",
+    "ru": "Пока нет заданий. Попробуйте одну из игр!"
+  },
+  "Javobingiz yoki kichik izoh": {
+    "en": "Your answer or a short comment",
+    "ru": "Ваш ответ или короткий комментарий"
+  },
+  "Ota-onangiz yordamida yozishingiz mumkin": {
+    "en": "You can ask a parent to help you write",
+    "ru": "Можно написать с помощью родителей"
+  },
+  "Javobni logoped tekshiradi.": {
+    "en": "Your therapist will review the answer.",
+    "ru": "Ответ проверит логопед."
+  },
+  "Bajarilgan mashqlar": {
+    "en": "Completed exercises",
+    "ru": "Выполненные упражнения"
+  },
+  "Faol kunlar": {
+    "en": "Active days",
+    "ru": "Активные дни"
+  },
+  "O‘yin urinishlari": {
+    "en": "Game attempts",
+    "ru": "Попытки в играх"
+  },
+  "Birinchi qadam": {
+    "en": "First step",
+    "ru": "Первый шаг"
+  },
+  "Izchil o‘rganuvchi": {
+    "en": "Consistent learner",
+    "ru": "Старательный ученик"
+  },
+  "Mashq ustasi": {
+    "en": "Practice champion",
+    "ru": "Мастер упражнений"
+  },
+  "Qo‘lga kiritildi": {
+    "en": "Earned",
+    "ru": "Получено"
+  },
+  "Hali oldinda": {
+    "en": "Still ahead",
+    "ru": "Всё впереди"
+  },
+  "Faoliyat tarixi": {
+    "en": "Activity history",
+    "ru": "История активности"
+  },
+  "Bildirishnomalar": {
+    "en": "Notifications",
+    "ru": "Уведомления"
+  },
+  "Barchasini o‘qilgan deb belgilash": {
+    "en": "Mark all as read",
+    "ru": "Отметить всё прочитанным"
+  },
+  "Shaxsiy yozishmalar": {
+    "en": "Private messages",
+    "ru": "Личная переписка"
+  },
+  "Administrator bilan chat": {
+    "en": "Chat with administrator",
+    "ru": "Чат с администратором"
+  },
+  "Suhbatni qidirish": {
+    "en": "Search conversations",
+    "ru": "Поиск переписки"
+  },
+  "Suhbatlar": {
+    "en": "Conversations",
+    "ru": "Переписка"
+  },
+  "Shaxsiy suhbat. Xabarlar serverda saqlanadi. Har 15 soniyada yangilanadi.": {
+    "en": "Private conversation. Messages are saved on the server and refreshed every 15 seconds.",
+    "ru": "Личная переписка. Сообщения сохраняются на сервере и обновляются каждые 15 секунд."
+  },
+  "Suhbatni tanlang": {
+    "en": "Select a conversation",
+    "ru": "Выберите переписку"
+  },
+  "Faqat siz va suhbatdoshingiz ko‘radi": {
+    "en": "Only you and the other participant can view it",
+    "ru": "Доступно только вам и собеседнику"
+  },
+  "Savolingizni shu yerda yozishingiz mumkin": {
+    "en": "You can ask your question here",
+    "ru": "Здесь можно задать вопрос"
+  },
+  "Chatni yangilash": {
+    "en": "Refresh chat",
+    "ru": "Обновить чат"
+  },
+  "Hisobga qayta kirish": {
+    "en": "Sign in again",
+    "ru": "Войти повторно"
+  },
+  "Xabarlar": {
+    "en": "Messages",
+    "ru": "Сообщения"
+  },
+  "Oldingi xabarlar": {
+    "en": "Earlier messages",
+    "ru": "Предыдущие сообщения"
+  },
+  "Yozishmalar yuklanmoqda…": {
+    "en": "Loading messages…",
+    "ru": "Загрузка переписки…"
+  },
+  "Suhbatni boshlang": {
+    "en": "Start a conversation",
+    "ru": "Начните переписку"
+  },
+  "Uy vazifasi yoki mashg‘ulot haqida savolingiz bormi?": {
+    "en": "Do you have a question about homework or sessions?",
+    "ru": "Есть вопрос о домашнем задании или занятиях?"
+  },
+  "O‘qildi": {
+    "en": "Read",
+    "ru": "Прочитано"
+  },
+  "Yuborildi": {
+    "en": "Sent",
+    "ru": "Отправлено"
+  },
+  "Xabaringiz": {
+    "en": "Your message",
+    "ru": "Ваше сообщение"
+  },
+  "Savol yoki xabaringizni yozing…": {
+    "en": "Write your question or message…",
+    "ru": "Напишите вопрос или сообщение…"
+  },
+  "Yuborilmoqda…": {
+    "en": "Sending…",
+    "ru": "Отправка…"
+  },
+  "Yuborish": {
+    "en": "Send",
+    "ru": "Отправить"
+  },
+  "Hozircha administrator topilmadi.": {
+    "en": "No administrator found yet.",
+    "ru": "Администратор пока не найден."
+  },
+  "Tasdiqlangan ota-onalar paydo bo‘lgach suhbatni boshlashingiz mumkin.": {
+    "en": "You can start a conversation once parents are approved.",
+    "ru": "Переписка станет доступна после подтверждения родителей."
+  },
+  "BIR JAMOA. BITTA MAQSAD.": {
+    "en": "ONE TEAM. ONE GOAL.",
+    "ru": "ОДНА КОМАНДА. ОДНА ЦЕЛЬ."
+  },
+  "Har bir so‘z —": {
+    "en": "Every word opens",
+    "ru": "Каждое слово —"
+  },
+  "yangi imkoniyat.": {
+    "en": "a new possibility.",
+    "ru": "новая возможность."
+  },
+  "Logoped, bola va ota-onani bog‘laydigan": {
+    "en": "Connecting therapists, children and parents",
+    "ru": "Объединяем логопеда, ребёнка и родителей"
+  },
+  "mehrli ta’lim muhiti.": {
+    "en": "in a caring learning environment.",
+    "ru": "в заботливой образовательной среде."
+  },
+  "Shaxsiy kabinet · Individual mashqlar": {
+    "en": "Personal dashboard · Individual exercises",
+    "ru": "Личный кабинет · Индивидуальные упражнения"
+  },
+  "Bosh sahifaga": {
+    "en": "Home",
+    "ru": "На главную"
+  },
+  "So‘rovingiz qabul qilindi": {
+    "en": "Your request has been received",
+    "ru": "Заявка принята"
+  },
+  "Bizga qo‘shiling": {
+    "en": "Join us",
+    "ru": "Присоединяйтесь"
+  },
+  "Xush kelibsiz!": {
+    "en": "Welcome!",
+    "ru": "Добро пожаловать!"
+  },
+  "Hisob tekshirilmoqda…": {
+    "en": "Checking your account…",
+    "ru": "Проверка аккаунта…"
+  },
+  "Hisobingiz tasdiqlangan": {
+    "en": "Your account is approved",
+    "ru": "Ваш аккаунт подтверждён"
+  },
+  "Boshqa hisob bilan kirish": {
+    "en": "Use another account",
+    "ru": "Войти в другой аккаунт"
+  },
+  "Hisob elektron pochtasi": {
+    "en": "Account email",
+    "ru": "Электронная почта аккаунта"
+  },
+  "Siz kimsiz?": {
+    "en": "Your role",
+    "ru": "Ваша роль"
+  },
+  "So‘rovni yangilash": {
+    "en": "Update request",
+    "ru": "Обновить заявку"
+  },
+  "Hisobingizga kirilgansiz": {
+    "en": "You are signed in",
+    "ru": "Вы вошли в аккаунт"
+  },
+  "Tasdiqlash holatini ko‘rish": {
+    "en": "View approval status",
+    "ru": "Посмотреть статус подтверждения"
+  },
+  "Ro‘yxatdan o‘tishni yakunlash": {
+    "en": "Complete registration",
+    "ru": "Завершить регистрацию"
+  },
+  "Sayt egasi uchun dastlabki sozlash": {
+    "en": "Initial setup for the site owner",
+    "ru": "Первичная настройка для владельца"
+  },
+  "ChatGPT orqali xavfsiz kirish": {
+    "en": "Secure sign-in with ChatGPT",
+    "ru": "Безопасный вход через ChatGPT"
+  },
+  "Alohida sayt parolini yaratishingiz shart emas.": {
+    "en": "You do not need a separate website password.",
+    "ru": "Отдельный пароль для сайта не нужен."
+  },
+  "ChatGPT bilan ro‘yxatdan o‘tish": {
+    "en": "Register with ChatGPT",
+    "ru": "Зарегистрироваться через ChatGPT"
+  },
+  "ChatGPT bilan kirish": {
+    "en": "Sign in with ChatGPT",
+    "ru": "Войти через ChatGPT"
+  },
+  "Kirishda yordam kerakmi?": {
+    "en": "Need help signing in?",
+    "ru": "Нужна помощь со входом?"
+  },
+  "Himoyalangan kirish · LOGOPED.UZ": {
+    "en": "Secure access · LOGOPED.UZ",
+    "ru": "Защищённый вход · LOGOPED.UZ"
+  },
+  "Bosh sahifaga qaytish": {
+    "en": "Back to home",
+    "ru": "Вернуться на главную"
+  },
+  "Kirish cheklangan": {
+    "en": "Access restricted",
+    "ru": "Доступ ограничен"
+  },
+  "Hisobga kirish": {
+    "en": "Sign in",
+    "ru": "Войти в аккаунт"
+  },
+  "O‘YNAB O‘RGANAMIZ": {
+    "en": "LEARNING THROUGH PLAY",
+    "ru": "УЧИМСЯ ИГРАЯ"
+  },
+  "Rasmni top": {
+    "en": "Find the picture",
+    "ru": "Найди картинку"
+  },
+  "Tovushni top": {
+    "en": "Find the sound",
+    "ru": "Найди звук"
+  },
+  "So‘zni yig‘": {
+    "en": "Build the word",
+    "ru": "Собери слово"
+  },
+  "Rasm asosida gap tuz": {
+    "en": "Build a sentence from a picture",
+    "ru": "Составь предложение по картинке"
+  },
+  "Ortiqchasini top": {
+    "en": "Find the odd one out",
+    "ru": "Найди лишнее"
+  },
+  "Eshit va tanla": {
+    "en": "Listen and choose",
+    "ru": "Послушай и выбери"
+  },
+  "Juftini top": {
+    "en": "Find the pair",
+    "ru": "Найди пару"
+  },
+  "Natijani saqlash": {
+    "en": "Save result",
+    "ru": "Сохранить результат"
+  },
+  "Natija saqlandi ✓": {
+    "en": "Result saved ✓",
+    "ru": "Результат сохранён ✓"
+  },
+  "Qayta o‘ynash": {
+    "en": "Play again",
+    "ru": "Играть снова"
+  },
+  "Tekshirish": {
+    "en": "Review",
+    "ru": "Проверка"
+  },
+  "Keyingi mashq": {
+    "en": "Next exercise",
+    "ru": "Следующее упражнение"
+  },
+  "Keyingi savol": {
+    "en": "Next question",
+    "ru": "Следующий вопрос"
+  },
+  "Eshitish": {
+    "en": "Listen",
+    "ru": "Послушать"
+  },
+  "Ajoyib! To‘g‘ri topdingiz.": {
+    "en": "Great! You found it.",
+    "ru": "Отлично! Вы нашли правильный ответ."
+  },
+  "Ajoyib! To‘g‘ri yig‘dingiz.": {
+    "en": "Great! You built it correctly.",
+    "ru": "Отлично! Вы собрали правильно."
+  },
+  "Bo‘g‘inlarni bosib so‘zni yig‘ing.": {
+    "en": "Tap the syllables to build the word.",
+    "ru": "Нажимайте на слоги, чтобы собрать слово."
+  },
+  "So‘zlarni to‘g‘ri tartibda joylashtiring.": {
+    "en": "Put the words in the correct order.",
+    "ru": "Расположите слова в правильном порядке."
+  },
+  "MASHQ TAYMERI": {
+    "en": "EXERCISE TIMER",
+    "ru": "ТАЙМЕР УПРАЖНЕНИЯ"
+  },
+  "Tanaffus": {
+    "en": "Pause",
+    "ru": "Пауза"
+  },
+  "Taymerni qayta boshlash": {
+    "en": "Reset timer",
+    "ru": "Сбросить таймер"
+  },
+  "Vaqt tugadi. Dam olamiz!": {
+    "en": "Time is up. Let’s take a break!",
+    "ru": "Время вышло. Отдохнём!"
+  },
+  "Tanlanganlardan olish": {
+    "en": "Remove from favourites",
+    "ru": "Убрать из избранного"
+  },
+  "Tanlanganlarga qo‘shish": {
+    "en": "Add to favourites",
+    "ru": "Добавить в избранное"
+  },
+  "Chop etish / PDF saqlash": {
+    "en": "Print / save PDF",
+    "ru": "Печать / сохранить PDF"
+  },
+  "Videoni YouTube’da ko‘rish": {
+    "en": "Watch on YouTube",
+    "ru": "Смотреть на YouTube"
+  },
+  "Material yuklash": {
+    "en": "Upload a resource",
+    "ru": "Загрузить материал"
+  },
+  "Kim ko‘ra oladi?": {
+    "en": "Who can view it?",
+    "ru": "Кому доступно?"
+  },
+  "Yuklash": {
+    "en": "Upload",
+    "ru": "Загрузить"
+  },
+  "Mashqlarga qaytish": {
+    "en": "Back to exercises",
+    "ru": "Вернуться к упражнениям"
+  },
+  "TOVUSHLAR BILAN ISHLASH": {
+    "en": "PRACTISING SOUNDS",
+    "ru": "РАБОТА СО ЗВУКАМИ"
+  },
+  "Shoshilmasdan, birga mashq qilamiz.": {
+    "en": "Let’s practise together at a comfortable pace.",
+    "ru": "Занимаемся вместе, не торопясь."
+  },
+  "Qurilma ovozida eshitish": {
+    "en": "Listen using device voice",
+    "ru": "Послушать голосом устройства"
+  },
+  "Artikulyatsion tayyorgarlik": {
+    "en": "Articulation preparation",
+    "ru": "Артикуляционная подготовка"
+  },
+  "Alohida talaffuz": {
+    "en": "Individual sound pronunciation",
+    "ru": "Изолированное произношение"
+  },
+  "Bo‘g‘inlarda mashq": {
+    "en": "Syllable practice",
+    "ru": "Упражнения со слогами"
+  },
+  "Gap bilan ishlash": {
+    "en": "Sentence practice",
+    "ru": "Работа с предложением"
+  },
+  "Rasm asosida gap tuzing": {
+    "en": "Make a sentence about the picture",
+    "ru": "Составьте предложение по картинке"
+  },
+  "Kichik topshiriq": {
+    "en": "A short activity",
+    "ru": "Небольшое задание"
+  },
+  "Qayta boshlash": {
+    "en": "Start again",
+    "ru": "Начать заново"
+  },
+  "To‘g‘ri, birga takrorlab ko‘ring!": {
+    "en": "Correct! Try repeating it together.",
+    "ru": "Верно! Попробуйте повторить вместе."
+  },
+  "Bajarilgan ishlar": {
+    "en": "Completed work",
+    "ru": "Выполненные работы"
+  },
+  "Boshlanmagan": {
+    "en": "Not started",
+    "ru": "Не начато"
+  },
+  "Mashq qilinmoqda": {
+    "en": "Practising",
+    "ru": "Отрабатывается"
+  },
+  "O‘zlashtirilgan": {
+    "en": "Mastered",
+    "ru": "Освоено"
+  },
+  "Til": {
+    "en": "Language",
+    "ru": "Язык"
+  },
+  "Yorug‘ rejim": {
+    "en": "Light mode",
+    "ru": "Светлая тема"
+  },
+  "Qorong‘i rejim": {
+    "en": "Dark mode",
+    "ru": "Тёмная тема"
+  },
+  "Interfeys tili": {
+    "en": "Interface language",
+    "ru": "Язык интерфейса"
+  },
+  "O‘quv materiallari va tovush mashqlari o‘zbek tilida.": {
+    "en": "Learning materials and sound exercises are in Uzbek.",
+    "ru": "Учебные материалы и звуковые упражнения — на узбекском языке."
+  },
+  "Administrator hisobini sozlash": {
+    "en": "Set up the administrator account",
+    "ru": "Настроить аккаунт администратора"
+  },
+  "Yopiq sayt egasi sifatida boshqaruv panelini faollashtiring.": {
+    "en": "Activate the management panel as the owner of this private site.",
+    "ru": "Активируйте панель управления как владелец закрытого сайта."
+  },
+  "Rolni “Tasdiqlash kutilmoqda” holatiga qaytarish shaxsiy kabinet vakolatlarini vaqtincha olib tashlaydi.": {
+    "en": "Setting a role back to “Awaiting approval” temporarily removes dashboard permissions.",
+    "ru": "Возврат роли в статус «Ожидает подтверждения» временно отключает полномочия личного кабинета."
+  },
+  "CSV eksport": {
+    "en": "Export CSV",
+    "ru": "Экспорт CSV"
+  },
+  "Kontent administratori bolalar yozuvlariga avtomatik kirish huquqiga ega emas. Logoped sifatida ham ishlasangiz, alohida vakolatni tanlang. Bu faqat o‘zingizga biriktirilgan o‘quvchilarni ochadi.": {
+    "en": "Content administration does not automatically grant access to children’s records. Enable separate therapist access if you also work as a therapist. This only opens your assigned students.",
+    "ru": "Управление контентом не даёт автоматического доступа к данным детей. Если вы также работаете логопедом, включите отдельные полномочия. Доступ откроется только к вашим ученикам."
+  },
+  "Kirish ChatGPT hisobi orqali ishlaydi. Ro‘yxatdan o‘tish so‘rovi foydalanuvchiga avtomatik vakolat bermaydi.": {
+    "en": "Sign-in uses a ChatGPT account. A registration request does not automatically grant permissions.",
+    "ru": "Вход выполняется через аккаунт ChatGPT. Заявка на регистрацию не предоставляет полномочия автоматически."
+  },
+  "Ma’lumotni tahrirlash": {
+    "en": "Edit information",
+    "ru": "Редактировать данные"
+  },
+  "O‘quvchi sizga biriktiriladi. Ota-ona va o‘quvchi hisobini kabinetdagi “Takliflar” bo‘limida bog‘lang.": {
+    "en": "The student is assigned to you. Link parent and student accounts in the Invitations section.",
+    "ru": "Ученик закрепляется за вами. Свяжите аккаунты родителя и ученика в разделе «Приглашения»."
+  },
+  "word va sentence: savolga rasm belgisi, javoblarga bo‘g‘in/so‘zlarni to‘g‘ri tartibda kiriting. memory: 6 ta turli rasm belgisi. Bu turlarda javob raqami 0 bo‘lsin.": {
+    "en": "For word and sentence games, enter a picture symbol as the prompt and syllables or words in the correct order as answers. For memory, enter 6 different picture symbols. Use answer index 0 for these types.",
+    "ru": "Для word и sentence укажите значок-картинку в вопросе, а в ответах — слоги или слова в правильном порядке. Для memory — 6 разных значков. Для этих типов укажите номер ответа 0."
+  },
+  "Logoped va bola U tovushini mashq qilmoqda": {
+    "en": "A therapist and child practising the U sound",
+    "ru": "Логопед и ребёнок отрабатывают звук У"
+  },
+  "Hisobingiz:": {
+    "en": "Your account:",
+    "ru": "Ваш аккаунт:"
+  },
+  "Kabinetga o‘tish": {
+    "en": "Go to dashboard",
+    "ru": "Перейти в кабинет"
+  },
+  "Kabinetimga kirish": {
+    "en": "Open my dashboard",
+    "ru": "Открыть мой кабинет"
+  },
+  "Ism-familiyangiz": {
+    "en": "Your full name",
+    "ru": "Ваше имя и фамилия"
+  },
+  "Tanlangan rol administrator tasdig‘idan keyin faollashadi. O‘quvchi hisobi ota-ona yoki logoped yaratgan tasdiqlangan taklif orqali ochiladi.": {
+    "en": "Your chosen role becomes active after administrator approval. Student accounts are created through a verified invitation from a parent or therapist.",
+    "ru": "Выбранная роль активируется после одобрения администратора. Аккаунт ученика создаётся по подтверждённому приглашению родителя или логопеда."
+  },
+  "Keyingi oynada ChatGPT hisobingizga kirasiz. Parolingiz ushbu saytda saqlanmaydi.": {
+    "en": "Sign in to your ChatGPT account in the next window. This website does not store your password.",
+    "ru": "В следующем окне войдите в аккаунт ChatGPT. Пароль не сохраняется на этом сайте."
+  },
+  "Kirish ChatGPT hisobingiz orqali amalga oshiriladi. Hisobingizga kira olmasangiz, ChatGPT kirish oynasidagi hisobni tiklash usulidan foydalaning. Saytga ruxsat berilmagan bo‘lsa, uning egasiga murojaat qiling.": {
+    "en": "Sign-in uses your ChatGPT account. If you cannot sign in, use account recovery on the ChatGPT sign-in page. If you lack site access, contact its owner.",
+    "ru": "Вход выполняется через аккаунт ChatGPT. Если войти не получается, воспользуйтесь восстановлением аккаунта на странице входа ChatGPT. Если нет доступа к сайту, обратитесь к владельцу."
+  },
+  "Baho, uyga vazifa va izohlar faqat sizga biriktirilgan o‘quvchilar uchun saqlanadi. Quyidagi tugma orqali o‘zingizning o‘quvchilaringiz bilan ishlashni faollashtiring.": {
+    "en": "Grades, homework and comments are saved only for your assigned students. Use the button below to enable access to your students.",
+    "ru": "Оценки, задания и комментарии сохраняются только для ваших учеников. Кнопка ниже включает работу с ними."
+  },
+  "qo‘shish": {
+    "en": "add",
+    "ru": "добавить"
+  },
+  "Bu bo‘limda hali yozuv yo‘q. “": {
+    "en": "There are no records here yet. Start with “",
+    "ru": "Здесь пока нет записей. Нажмите «"
+  },
+  "qo‘shish” tugmasidan boshlang.": {
+    "en": "add”.",
+    "ru": "добавить»."
+  },
+  "Barakalla!": {
+    "en": "Well done!",
+    "ru": "Молодец!"
+  },
+  "Bir xil ikkita rasmni toping. Urinishlar:": {
+    "en": "Find two matching pictures. Attempts:",
+    "ru": "Найдите две одинаковые картинки. Попытки:"
+  },
+  "· To‘g‘ri javoblar:": {
+    "en": "· Correct answers:",
+    "ru": "· Правильные ответы:"
+  },
+  "tovushi": {
+    "en": "sound",
+    "ru": "звук"
+  },
+  "Namunaviy o‘quv material · Demo. Individual talaffuz mashqini logoped bilan kelishing.": {
+    "en": "Sample learning material · Demo. Agree individual pronunciation exercises with your therapist.",
+    "ru": "Пример учебного материала · Демо. Индивидуальные упражнения на произношение согласуйте с логопедом."
+  },
+  "Rasmda kim bor? U nima qilyapti? Javobni kattalar bilan muhokama qiling. Erkin javob avtomatik baholanmaydi.": {
+    "en": "Who is in the picture? What are they doing? Discuss your answer with an adult. Free responses are not automatically graded.",
+    "ru": "Кто изображён на картинке? Что он делает? Обсудите ответ со взрослым. Свободный ответ не оценивается автоматически."
+  },
+  "Logoped va bola U tovushini ko‘zgu va kartochka bilan mashq qilmoqda": {
+    "en": "A therapist and child practising U with a mirror and flashcard",
+    "ru": "Логопед и ребёнок отрабатывают звук У с зеркалом и карточкой"
+  },
+  "Oldingi banner": {
+    "en": "Previous banner",
+    "ru": "Предыдущий баннер"
+  },
+  "Keyingi banner": {
+    "en": "Next banner",
+    "ru": "Следующий баннер"
+  },
+  "Birgalikdagi mashg‘ulot tasviri": {
+    "en": "An illustration of a shared session",
+    "ru": "Изображение совместного занятия"
+  },
+  "Nutqni rivojlantiramiz.": {
+    "en": "Developing speech.",
+    "ru": "Развиваем речь."
+  },
+  "Imkoniyatlarni kengaytiramiz.": {
+    "en": "Expanding possibilities.",
+    "ru": "Расширяем возможности."
+  },
+  "PDF, PNG, JPG, MP3, WAV, MP4 yoki WebM · 10 MB gacha": {
+    "en": "PDF, PNG, JPG, MP3, WAV, MP4 or WebM · up to 10 MB",
+    "ru": "PDF, PNG, JPG, MP3, WAV, MP4 или WebM · до 10 МБ"
+  },
+  "Bu shaxsiy mashq tarixi. O‘yin ballari nutq rivojlanishining klinik bahosi emas.": {
+    "en": "This is your personal practice history. Game scores are not a clinical assessment of speech development.",
+    "ru": "Это личная история занятий. Баллы в играх не являются клинической оценкой развития речи."
+  },
+  "Birinchi mashqni bajaring — tarixingiz shu yerda boshlanadi.": {
+    "en": "Complete your first exercise to start your history here.",
+    "ru": "Выполните первое упражнение — здесь начнётся ваша история."
+  },
+  "Yangi topshiriq, jadval va logoped izohlari shu yerda ko‘rinadi.": {
+    "en": "New tasks, schedule updates and therapist comments appear here.",
+    "ru": "Здесь появляются новые задания, изменения расписания и комментарии логопеда."
+  },
+  "Taklif 7 kun amal qiladi. Uni faqat ko‘rsatilgan elektron pochta egasi qabul qila oladi. Havola avtomatik yuborilmaydi.": {
+    "en": "The invitation is valid for 7 days and can only be accepted by the specified email owner. The link is not sent automatically.",
+    "ru": "Приглашение действует 7 дней. Принять его может только владелец указанной почты. Ссылка не отправляется автоматически."
+  },
+  "daqiqa ·": {
+    "en": "minutes ·",
+    "ru": "минут ·"
+  },
+  "Shaxsiy taklif": {
+    "en": "Personal invitation",
+    "ru": "Личное приглашение"
+  },
+  "Taklif yuborilgan elektron pochta bilan kirishingiz kerak. Bog‘lanish faqat tasdiqlaganingizdan keyin amalga oshadi.": {
+    "en": "Sign in with the email address used for the invitation. Accounts are linked only after your confirmation.",
+    "ru": "Войдите с почтой, указанной в приглашении. Аккаунты будут связаны только после подтверждения."
+  },
+  "Tekshirilmoqda…": {
+    "en": "Verifying…",
+    "ru": "Проверка…"
+  },
+  "Hisobimga kirish": {
+    "en": "Sign in to my account",
+    "ru": "Войти в мой аккаунт"
+  },
+  "Taklifni qabul qilish": {
+    "en": "Accept invitation",
+    "ru": "Принять приглашение"
+  },
+  "yosh ·": {
+    "en": "years ·",
+    "ru": "лет ·"
+  },
+  "daqiqa": {
+    "en": "minutes",
+    "ru": "минут"
+  },
+  "Menyu": {
+    "en": "Menu",
+    "ru": "Меню"
+  },
+  "Bu yopiq saytning egasi sifatida administrator hisobingizni yarating.": {
+    "en": "Create your administrator account as the owner of this private site.",
+    "ru": "Создайте аккаунт администратора как владелец закрытого сайта."
+  },
+  "Logoped yoki administrator sizga rol biriktirgach, kabinet ochiladi.": {
+    "en": "Your dashboard opens once a therapist or administrator assigns your role.",
+    "ru": "Кабинет откроется после назначения роли логопедом или администратором."
+  },
+  "O‘quvchini tanlang": {
+    "en": "Select a student",
+    "ru": "Выберите ученика"
+  },
+  "ta mashq topildi": {
+    "en": "exercises found",
+    "ru": "упражнений найдено"
+  },
+  "Boshlang‘ich o‘quv materiallari Demo deb belgilangan. Haqiqiy o‘quvchilar va natijalar avtomatik yaratilmaydi.": {
+    "en": "Starter learning materials are marked Demo. Real students and results are not generated automatically.",
+    "ru": "Начальные учебные материалы помечены «Демо». Реальные ученики и результаты не создаются автоматически."
+  },
+  "KABINET · MA’LUMOTLARNI SAQLASH": {
+    "en": "DASHBOARD · SAVE INFORMATION",
+    "ru": "КАБИНЕТ · СОХРАНЕНИЕ ДАННЫХ"
+  },
+  "Hisoblarni bog‘lash uchun “Takliflar” bo‘limidan foydalaning.": {
+    "en": "Use Invitations to link accounts.",
+    "ru": "Для связи аккаунтов используйте раздел «Приглашения»."
+  },
+  "Qonuniy vakilning ma’lumotlarni saqlashga roziligi olingan": {
+    "en": "The legal representative has consented to data storage",
+    "ru": "Получено согласие законного представителя на хранение данных"
+  },
+  "Mashqni tanlash (ixtiyoriy)": {
+    "en": "Choose an exercise (optional)",
+    "ru": "Выбрать упражнение (необязательно)"
+  },
+  "DAQIQA": {
+    "en": "MINUTES",
+    "ru": "МИНУТ"
+  },
+  "Mashqni kattalar bilan, zo‘riqmasdan bajaring. Bola charchasa, tanaffus qiling. Individual talaffuz mashqlarini logoped bilan kelishing.": {
+    "en": "Practise with an adult without strain. Take a break if the child is tired. Agree individual pronunciation exercises with your therapist.",
+    "ru": "Выполняйте упражнение со взрослым, без напряжения. Если ребёнок устал, сделайте перерыв. Индивидуальные упражнения на произношение согласуйте с логопедом."
+  },
+  "tovushi bilan ishlash": {
+    "en": "sound practice",
+    "ru": "работа со звуком"
+  },
+  "Tovushni shakllantirish usulini logoped belgilaydi. Quyidagi bosqichlar logoped bilan ishlash uchun ketma-ketlikdir.": {
+    "en": "Your therapist chooses the sound development approach. The following stages describe the sequence for working together.",
+    "ru": "Способ постановки звука выбирает логопед. Ниже указана последовательность совместной работы."
+  },
+  "Artikulyatsion tayyorgarlik.": {
+    "en": "Articulation preparation.",
+    "ru": "Артикуляционная подготовка."
+  },
+  "Tovushni alohida aytish.": {
+    "en": "Pronouncing the sound separately.",
+    "ru": "Изолированное произношение звука."
+  },
+  "Bo‘g‘inlarda mashq qilish.": {
+    "en": "Practising syllables.",
+    "ru": "Упражнения со слогами."
+  },
+  "So‘z boshida, o‘rtasida va oxirida ishlash.": {
+    "en": "Practising at the start, middle and end of words.",
+    "ru": "Отработка в начале, середине и конце слова."
+  },
+  "So‘zlar bilan sodda gaplar tuzish.": {
+    "en": "Making simple sentences with words.",
+    "ru": "Составление простых предложений."
+  },
+  "Tovushni top o‘yini": {
+    "en": "Find the sound game",
+    "ru": "Игра «Найди звук»"
+  },
+  "Javob yoki bajarish haqida izoh": {
+    "en": "Answer or completion comment",
+    "ru": "Ответ или комментарий о выполнении"
+  },
+  "Shaxsiy kabinetdagi ma’lumotlar serverda saqlanadi. Ota-ona va o‘quvchi faqat biriktirilgan profilni, logoped esa o‘z o‘quvchilarini ko‘radi. Administrator rollar va bog‘lanishlarni boshqaradi.": {
+    "en": "Dashboard information is stored on the server. Parents and students see only linked profiles, and therapists see their own students. The administrator manages roles and account links.",
+    "ru": "Данные кабинета хранятся на сервере. Родитель и ученик видят только связанный профиль, а логопед — своих учеников. Администратор управляет ролями и связями аккаунтов."
+  },
+  "Yuklangan PDF, rasm va audio fayllar uchun kirish huquqi serverda tekshiriladi. Administrator faqat logopedlar yoki tasdiqlangan foydalanuvchilar uchun material joylashtirishi mumkin.": {
+    "en": "Access to uploaded PDFs, images and audio is checked on the server. Resources can be limited to therapists or approved users.",
+    "ru": "Доступ к загруженным PDF, изображениям и аудио проверяется на сервере. Материалы можно ограничить логопедами или подтверждёнными пользователями."
+  },
+  "Bolani qo‘shishdan oldin qonuniy vakilning roziligi olinadi. Tashxis, audioyozuv va keraksiz shaxsiy ma’lumotlarni kiritmang. Tuzatish yoki o‘chirish masalasida platforma administratoriga murojaat qiling.": {
+    "en": "Obtain consent from the legal representative before adding a child. Do not enter diagnoses, audio recordings or unnecessary personal data. Contact the administrator for corrections or deletion.",
+    "ru": "Перед добавлением ребёнка получите согласие законного представителя. Не вводите диагнозы, аудиозаписи и лишние персональные данные. Для исправления или удаления обратитесь к администратору."
+  },
+  "Bosh sahifada sayt egasi taqdim etgan logopedik mashg‘ulot tasviri ishlatilgan.": {
+    "en": "The home page uses a speech therapy image supplied by the site owner.",
+    "ru": "На главной странице используется изображение логопедического занятия, предоставленное владельцем сайта."
+  },
+  "Mashqlar ta’lim uchun mo‘ljallangan. Individual mashg‘ulot rejasini logoped belgilaydi. O‘yin ballari klinik baholash hisoblanmaydi.": {
+    "en": "Exercises are educational. A therapist sets the individual plan. Game scores are not a clinical assessment.",
+    "ru": "Упражнения предназначены для обучения. Индивидуальный план составляет логопед. Игровые баллы не являются клинической оценкой."
+  },
+  "AI yordamchi": {
+    "en": "AI assistant",
+    "ru": "ИИ-помощник"
+  },
+  "Vazifa va izoh uchun qoralama tayyorlash.": {
+    "en": "Draft homework and feedback.",
+    "ru": "Черновики заданий и комментариев."
+  },
+  "SHAXSIY NATIJALAR": {
+    "en": "PERSONAL RESULTS",
+    "ru": "ЛИЧНЫЕ РЕЗУЛЬТАТЫ"
+  },
+  "Baholar tabeli": {
+    "en": "Gradebook",
+    "ru": "Табель оценок"
+  },
+  "Katakdagi + tugmasini bosing: o‘quvchi va sana avtomatik tanlanadi.": {
+    "en": "Press + in a cell to select the student and date automatically.",
+    "ru": "Нажмите + в ячейке: ученик и дата будут выбраны автоматически."
+  },
+  "Oy": {
+    "en": "Month",
+    "ru": "Месяц"
+  },
+  "Barcha guruhlar": {
+    "en": "All groups",
+    "ru": "Все группы"
+  },
+  "O‘rtacha baho — tanlangan oyda qayd etilgan baholar yig‘indisi ularning soniga bo‘lingan qiymat. Bu nutq rivojlanish foizi emas.": {
+    "en": "Average grade is the sum of recorded grades for the selected month divided by their count. It is not a speech development percentage.",
+    "ru": "Средняя оценка — сумма записанных за выбранный месяц оценок, делённая на их количество. Это не процент развития речи."
+  },
+  "Baholar soni": {
+    "en": "Grade count",
+    "ru": "Количество оценок"
+  },
+  "O‘rtacha": {
+    "en": "Average",
+    "ru": "Средняя"
+  },
+  "O‘quvchilar topilmadi.": {
+    "en": "No students found.",
+    "ru": "Ученики не найдены."
+  },
+  "1. O‘quvchini tanlang → 2. Ma’lumotni kiriting → 3. Saqlang": {
+    "en": "1. Select a student → 2. Enter details → 3. Save",
+    "ru": "1. Выберите ученика → 2. Введите данные → 3. Сохраните"
+  },
+  "Uyga vazifa uchun tushunarli ko‘rsatma yozishga yordam ber.": {
+    "en": "Help me draft clear homework instructions.",
+    "ru": "Помоги составить понятную инструкцию к домашнему заданию."
+  },
+  "Ota-onaga muloyim izoh uchun to‘ldiriladigan namuna yoz.": {
+    "en": "Draft a fill-in template for kind parent feedback.",
+    "ru": "Подготовь шаблон доброжелательного комментария для родителя."
+  },
+  "Mashg‘ulot rejasining bo‘sh shablonini tayyorla.": {
+    "en": "Create a blank lesson plan template.",
+    "ru": "Подготовь пустой шаблон плана занятия."
+  },
+  "Ulangan": {
+    "en": "Connected",
+    "ru": "Подключено"
+  },
+  "Hali ulanmagan": {
+    "en": "Not connected yet",
+    "ru": "Пока не подключено"
+  },
+  "AI xizmati hali ulanmagan.": {
+    "en": "The AI service is not connected yet.",
+    "ru": "ИИ-сервис пока не подключён."
+  },
+  "Ulanish faollashgach, bu yerda savol yuborib javob olishingiz mumkin. Hozir AI javoblari yaratilmaydi.": {
+    "en": "Once connected, you can send a question here and receive a response. AI responses are not being generated yet.",
+    "ru": "После подключения здесь можно будет отправлять вопросы и получать ответы. Сейчас ИИ-ответы не создаются."
+  },
+  "Savolingiz": {
+    "en": "Your question",
+    "ru": "Ваш вопрос"
+  },
+  "Mavzu, yosh guruhi va qanday qoralama kerakligini yozing.": {
+    "en": "Describe the topic, age group and draft you need.",
+    "ru": "Укажите тему, возрастную группу и нужный черновик."
+  },
+  "Bolaning ismi, tashxisi yoki shaxsiy ma’lumotlarini yozmang. Faqat kiritilgan savol OpenAI xizmatiga yuboriladi; o‘quvchilar yozuvlari avtomatik yuborilmaydi.": {
+    "en": "Do not enter a child's name, diagnosis or personal information. Only your question is sent to OpenAI; student records are not sent automatically.",
+    "ru": "Не указывайте имя, диагноз или личные данные ребёнка. В OpenAI отправляется только ваш вопрос; записи учеников автоматически не передаются."
+  },
+  "Savolni AI xizmatiga yuborishga roziman.": {
+    "en": "I agree to send this question to the AI service.",
+    "ru": "Я согласен отправить вопрос ИИ-сервису."
+  },
+  "Javob tayyorlanmoqda…": {
+    "en": "Preparing a response…",
+    "ru": "Подготовка ответа…"
+  },
+  "Yordamchidan so‘rash": {
+    "en": "Ask the assistant",
+    "ru": "Спросить помощника"
+  },
+  "Tekshirish uchun qoralama": {
+    "en": "Draft for review",
+    "ru": "Черновик для проверки"
+  },
+  "Nusxalandi": {
+    "en": "Copied",
+    "ru": "Скопировано"
+  },
+  "AI xato qilishi mumkin. Matnni tekshiring; baho, izoh yoki vazifa avtomatik saqlanmaydi.": {
+    "en": "AI can make mistakes. Review the text; grades, comments and assignments are not saved automatically.",
+    "ru": "ИИ может ошибаться. Проверьте текст; оценки, комментарии и задания автоматически не сохраняются."
+  },
+  "Nusxalash amalga oshmadi. Matnni belgilang va nusxalang.": {
+    "en": "Copy failed. Select the text and copy it manually.",
+    "ru": "Не удалось скопировать. Выделите текст и скопируйте вручную."
+  },
+  "Yordamchi administrator va logoped uchun.": {
+    "en": "The assistant is available to administrators and speech therapists.",
+    "ru": "Помощник доступен администратору и логопеду."
+  },
+  "AI hali ulanmagan. Administrator server ulanishini sozlashi kerak.": {
+    "en": "AI is not connected yet. The administrator must configure the server connection.",
+    "ru": "ИИ пока не подключён. Администратору нужно настроить подключение на сервере."
+  },
+  "So‘rovlar chegarasiga yetdingiz. Keyinroq urinib ko‘ring.": {
+    "en": "Request limit reached. Try again later.",
+    "ru": "Достигнут лимит запросов. Попробуйте позже."
+  },
+  "AI xizmatidan javob olinmadi. Keyinroq qayta urinib ko‘ring.": {
+    "en": "The AI service did not respond. Please try again later.",
+    "ru": "ИИ-сервис не ответил. Попробуйте позже."
+  },
+  "Javob to‘liq tayyorlanmadi. Savolni qisqartirib qayta yuboring.": {
+    "en": "The response was incomplete. Shorten the question and try again.",
+    "ru": "Ответ не завершён. Сократите вопрос и повторите попытку."
+  },
+  "Yordamchiga ulanib bo‘lmadi. Qayta urinib ko‘ring.": {
+    "en": "Could not connect to the assistant. Please try again.",
+    "ru": "Не удалось подключиться к помощнику. Повторите попытку."
+  },
+  "Darsdan keyingi uy vazifasi": {
+    "en": "Homework after the lesson",
+    "ru": "Домашнее задание после урока"
+  },
+  "Darsni tugatganingizni belgilang. Shu mavzudagi uy vazifasi kabinetga avtomatik tushadi.": {
+    "en": "Mark the lesson as finished. Homework on this topic will appear in your dashboard automatically.",
+    "ru": "Отметьте завершение урока. Домашнее задание по этой теме автоматически появится в кабинете."
+  },
+  "Dars tugatildi": {
+    "en": "Lesson completed",
+    "ru": "Урок завершён"
+  },
+  "Darsni tugatdim": {
+    "en": "I finished the lesson",
+    "ru": "Я закончил урок"
+  },
+  "Uy vazifasi tayyor. Uni kabinetda bajarishingiz mumkin.": {
+    "en": "Your homework is ready. Open it in your dashboard.",
+    "ru": "Домашнее задание готово. Откройте его в кабинете."
+  },
+  "Uy vazifasini ochish": {
+    "en": "Open homework",
+    "ru": "Открыть домашнее задание"
+  },
+  "Natija va uy vazifasini saqlash uchun hisobga kiring va o‘quvchi profilini bog‘lang.": {
+    "en": "Sign in and link a student profile to save results and receive homework.",
+    "ru": "Войдите и привяжите профиль ученика, чтобы сохранять результаты и получать задания."
+  },
+  "Har bir dars uchun bir o‘quvchiga bir kunda bitta avtomatik vazifa yaratiladi. Muddat — keyingi kun.": {
+    "en": "Each student receives one automatic assignment per lesson per day. It is due the next day.",
+    "ru": "Для каждого ученика создаётся одно автоматическое задание по уроку в день. Срок — следующий день."
+  },
+  "O‘quvchilar va ota-onalar bilan chat": {
+    "en": "Student and parent chats",
+    "ru": "Чаты с учениками и родителями"
+  },
+  "Tasdiqlangan o‘quvchi yoki ota-ona hisobi paydo bo‘lgach suhbatni boshlashingiz mumkin.": {
+    "en": "Start a chat when a student or parent account is approved.",
+    "ru": "Начните общение после подтверждения аккаунта ученика или родителя."
+  },
+  "Avval o‘quvchi hisobini taklif orqali bog‘lang.": {
+    "en": "First link the student account using an invitation.",
+    "ru": "Сначала привяжите аккаунт ученика через приглашение."
+  },
+  "Avtomatik uy vazifasi matni (ixtiyoriy)": {
+    "en": "Automatic homework instructions (optional)",
+    "ru": "Текст автоматического домашнего задания (необязательно)"
+  },
+  "Bo‘sh qoldirilsa, uy vazifasi dars nomi va ko‘rsatmalaridan tuziladi.": {
+    "en": "If left blank, homework uses the lesson title and instructions.",
+    "ru": "Если оставить пустым, задание будет составлено из названия и инструкций урока."
+  },
+  "Dars natijasi saqlanmadi. Qayta urinib ko‘ring.": {
+    "en": "Could not save the lesson result. Please try again.",
+    "ru": "Не удалось сохранить результат урока. Повторите попытку."
+  },
+  "Dars topilmadi yoki foydalanish cheklangan": {
+    "en": "Lesson not found or access restricted",
+    "ru": "Урок не найден или доступ ограничен"
+  },
+  "O‘quvchi va darsni tanlang": {
+    "en": "Select a student and lesson",
+    "ru": "Выберите ученика и урок"
+  },
+  "O‘quvchi bilan ishlash": {
+    "en": "Student workspace",
+    "ru": "Работа с учеником"
+  },
+  "Tekshirish navbati": {
+    "en": "Review queue",
+    "ru": "Очередь на проверку"
+  },
+  "Bajarilgan vazifaga izoh va ixtiyoriy baho bering.": {
+    "en": "Review a completed task with feedback and an optional grade.",
+    "ru": "Оставьте отзыв и при желании оценку за выполненное задание."
+  },
+  "Tekshiriladigan vazifa yo‘q": {
+    "en": "No tasks to review",
+    "ru": "Нет заданий для проверки"
+  },
+  "O‘quvchi vazifani bajargach, javobi shu yerga keladi.": {
+    "en": "Completed tasks will appear here.",
+    "ru": "Выполненные задания появятся здесь."
+  },
+  "Matnli javob yuborilmagan; faqat bajarilgan deb belgilangan.": {
+    "en": "No written answer; marked as completed only.",
+    "ru": "Письменного ответа нет; отмечено только выполнение."
+  },
+  "Topshiriq matni": {
+    "en": "Task instructions",
+    "ru": "Текст задания"
+  },
+  "Baho (ixtiyoriy)": {
+    "en": "Grade (optional)",
+    "ru": "Оценка (необязательно)"
+  },
+  "Bahosiz tekshirish": {
+    "en": "Review without a grade",
+    "ru": "Проверить без оценки"
+  },
+  "Baho qo‘yilsa, mezon majburiy": {
+    "en": "A grading criterion is required for a grade",
+    "ru": "Для оценки укажите критерий"
+  },
+  "Tekshirishni yakunlash": {
+    "en": "Complete review",
+    "ru": "Завершить проверку"
+  },
+  "Vazifa tekshirildi. Natija va izoh saqlandi.": {
+    "en": "Task reviewed. Result and feedback saved.",
+    "ru": "Задание проверено. Результат и отзыв сохранены."
+  },
+  "Guruh belgilanmagan": {
+    "en": "No group assigned",
+    "ru": "Группа не указана"
+  },
+  "O‘quvchilar topilmadi": {
+    "en": "No students found",
+    "ru": "Ученики не найдены"
+  },
+  "O‘quvchini tanlang — ishni boshlang": {
+    "en": "Select a student to get started",
+    "ru": "Выберите ученика для начала работы"
+  },
+  "Baho, izoh, vazifa va tekshiruv bir joyda.": {
+    "en": "Grades, feedback, homework and reviews in one place.",
+    "ru": "Оценки, отзывы, задания и проверка в одном месте."
+  },
+  "Tekshirish kutilmoqda": {
+    "en": "Awaiting review",
+    "ru": "Ожидают проверки"
+  },
+  "Muddati o‘tgan vazifalar": {
+    "en": "Overdue tasks",
+    "ru": "Просроченные задания"
+  },
+  "Qo‘yilgan baholar": {
+    "en": "Recorded grades",
+    "ru": "Выставленные оценки"
+  },
+  "So‘nggi yozuvlar": {
+    "en": "Recent activity",
+    "ru": "Последние записи"
+  },
+  "Hali yozuv yo‘q. Birinchi vazifani bering.": {
+    "en": "No activity yet. Assign the first task.",
+    "ru": "Записей пока нет. Назначьте первое задание."
+  },
+  "BIR O‘QUVCHI. BIR OYNA.": {
+    "en": "ONE STUDENT. ONE WORKSPACE.",
+    "ru": "ОДИН УЧЕНИК. ОДНО ОКНО."
+  },
+  "Bugungi ishni oson boshlang": {
+    "en": "Start your day with clarity",
+    "ru": "Начните день с удобного рабочего окна"
+  },
+  "O‘quvchini tanlang, vazifa bering va natijani tekshiring.": {
+    "en": "Select a student, assign homework and review the result.",
+    "ru": "Выберите ученика, назначьте задание и проверьте результат."
+  },
+  "Ish oynasi": {
+    "en": "Workspace",
+    "ru": "Рабочее окно"
+  },
+  "Bahoni tanlang": {
+    "en": "Select a grade",
+    "ru": "Выберите оценку"
+  },
+  "Baho, uyga vazifa va izohlar faqat sizga biriktirilgan o‘quvchilar uchun saqlanadi.": {
+    "en": "Grades, homework and feedback are limited to your assigned students.",
+    "ru": "Оценки, задания и отзывы доступны только для закреплённых за вами учеников."
+  },
+  "review_task": {
+    "en": "Task reviewed",
+    "ru": "Задание проверено"
+  },
+  "Tekshirish uchun alohida logoped vakolati kerak": {
+    "en": "Care permission is required to review tasks",
+    "ru": "Для проверки необходимы полномочия логопеда"
+  },
+  "Vazifa bajarilmagan yoki avval tekshirilgan. Ro‘yxatni yangilang.": {
+    "en": "Task is not completed or has already been reviewed. Refresh the list.",
+    "ru": "Задание не выполнено или уже проверено. Обновите список."
+  },
+  "Izoh kiriting. Baho qo‘yilsa, 1–5 ball va mezon kerak.": {
+    "en": "Add feedback. A grade requires 1–5 points and a criterion.",
+    "ru": "Добавьте отзыв. Для оценки укажите 1–5 баллов и критерий."
+  },
+  "Vazifa o‘zgargan. Ro‘yxatni yangilab qayta urinib ko‘ring.": {
+    "en": "Task has changed. Refresh the list and try again.",
+    "ru": "Задание изменилось. Обновите список и повторите попытку."
+  },
+  "Topshiriq tekshirildi. Yangi izoh bor.": {
+    "en": "Task reviewed. New feedback is available.",
+    "ru": "Задание проверено. Есть новый отзыв."
+  },
+  "Admin kodini kiriting": {
+    "en": "Enter the admin code",
+    "ru": "Введите код администратора"
+  },
+  "Faqat administrator uchun": {
+    "en": "Administrators only",
+    "ru": "Только для администратора"
+  },
+  "Kod allaqachon o‘rnatilgan": {
+    "en": "A code has already been set",
+    "ru": "Код уже установлен"
+  },
+  "Avval admin kodini yarating": {
+    "en": "Set your admin code first",
+    "ru": "Сначала создайте код администратора"
+  },
+  "Urinishlar chegarasi tugadi. 15 daqiqadan keyin urinib ko‘ring.": {
+    "en": "Attempt limit reached. Try again in 15 minutes.",
+    "ru": "Лимит попыток исчерпан. Повторите через 15 минут."
+  },
+  "Kod noto‘g‘ri": {
+    "en": "Incorrect code",
+    "ru": "Неверный код"
+  },
+  "Tiklash kaliti noto‘g‘ri": {
+    "en": "Incorrect recovery key",
+    "ru": "Неверный ключ восстановления"
+  },
+  "Kod 12–64 belgidan iborat bo‘lsin; bo‘sh joy ishlatmang.": {
+    "en": "Use 12–64 characters without spaces.",
+    "ru": "Используйте 12–64 символа без пробелов."
+  },
+  "Kod o‘zgargan. Sahifani yangilang.": {
+    "en": "The code has changed. Refresh this page.",
+    "ru": "Код изменился. Обновите страницу."
+  },
+  "Amal bajarilmadi. Qayta urinib ko‘ring.": {
+    "en": "The action failed. Please try again.",
+    "ru": "Действие не выполнено. Повторите попытку."
+  },
+  "Tiklash kalitini saqlang": {
+    "en": "Save your recovery key",
+    "ru": "Сохраните ключ восстановления"
+  },
+  "Admin kodini yarating": {
+    "en": "Create an admin code",
+    "ru": "Создайте код администратора"
+  },
+  "Admin kodini almashtirish": {
+    "en": "Change admin code",
+    "ru": "Изменить код администратора"
+  },
+  "Admin kodini tiklash": {
+    "en": "Recover admin access",
+    "ru": "Восстановить доступ администратора"
+  },
+  "Admin panelga kirish": {
+    "en": "Access the admin panel",
+    "ru": "Вход в панель администратора"
+  },
+  "Bu kalit faqat hozir ko‘rsatiladi. Kodni unutsangiz, shu kalit bilan yangisini o‘rnatasiz. Uni xavfsiz joyga yozib oling.": {
+    "en": "This key is shown only now. If you forget the code, use it to set a new one. Store it safely.",
+    "ru": "Этот ключ показывается только сейчас. Если забудете код, он позволит создать новый. Сохраните его в безопасном месте."
+  },
+  "Tiklash kaliti": {
+    "en": "Recovery key",
+    "ru": "Ключ восстановления"
+  },
+  "Tiklash kalitini saqladim": {
+    "en": "I have saved the recovery key",
+    "ru": "Я сохранил ключ восстановления"
+  },
+  "Hisobingiz administrator sifatida tasdiqlangan. Boshqaruv paneli uchun alohida maxfiy kod belgilang.": {
+    "en": "Your account is an administrator. Set a separate secret code for the admin panel.",
+    "ru": "У вас учётная запись администратора. Задайте отдельный секретный код для панели управления."
+  },
+  "Hisobingizga kirilgan bo‘lishi va saqlangan tiklash kaliti kerak.": {
+    "en": "You must be signed in and have your saved recovery key.",
+    "ru": "Необходимо войти в свою учётную запись и иметь сохранённый ключ восстановления."
+  },
+  "Boshqaruv amallari uchun administrator hisobi va maxfiy kod talab qilinadi.": {
+    "en": "Admin actions require an administrator account and a secret code.",
+    "ru": "Для управления нужны учётная запись администратора и секретный код."
+  },
+  "Kodlar bir xil emas": {
+    "en": "The codes do not match",
+    "ru": "Коды не совпадают"
+  },
+  "Amaldagi admin kodi": {
+    "en": "Current admin code",
+    "ru": "Текущий код администратора"
+  },
+  "Admin kodi": {
+    "en": "Admin code",
+    "ru": "Код администратора"
+  },
+  "Kodni yashirish": {
+    "en": "Hide code",
+    "ru": "Скрыть код"
+  },
+  "Kodni ko‘rsatish": {
+    "en": "Show code",
+    "ru": "Показать код"
+  },
+  "Yangi admin kodi": {
+    "en": "New admin code",
+    "ru": "Новый код администратора"
+  },
+  "Kamida 12 belgi. Harf va raqamlarni aralashtiring, bo‘sh joy qo‘ymang.": {
+    "en": "At least 12 characters. Mix letters and numbers; no spaces.",
+    "ru": "Не менее 12 символов. Используйте буквы и цифры без пробелов."
+  },
+  "Kodni takrorlang": {
+    "en": "Repeat the code",
+    "ru": "Повторите код"
+  },
+  "Kodni saqlash": {
+    "en": "Save code",
+    "ru": "Сохранить код"
+  },
+  "Kodni tasdiqlash": {
+    "en": "Verify code",
+    "ru": "Подтвердить код"
+  },
+  "Kod bilan kirish": {
+    "en": "Sign in with code",
+    "ru": "Войти с кодом"
+  },
+  "Kodni unutdingizmi?": {
+    "en": "Forgot your code?",
+    "ru": "Забыли код?"
+  },
+  "Panel 30 daqiqadan keyin qayta qulflanadi. 15 daqiqada 5 ta urinish mumkin.": {
+    "en": "The panel locks again after 30 minutes. Up to 5 attempts per 15 minutes.",
+    "ru": "Через 30 минут панель блокируется. Разрешено 5 попыток за 15 минут."
+  },
+  "Panelni qulflash": {
+    "en": "Lock panel",
+    "ru": "Заблокировать панель"
+  },
+  "Administrator — kod bilan kirish": {
+    "en": "Administrator — access with code",
+    "ru": "Администратор — вход с кодом"
+  },
+  "Hisobdan chiqish": {
+    "en": "Sign out",
+    "ru": "Выход из учётной записи"
+  },
+  "Hisobdan chiqilmoqda…": {
+    "en": "Signing out…",
+    "ru": "Выход…"
+  },
+  "admin_setup": {
+    "en": "Admin code created",
+    "ru": "Код администратора создан"
+  },
+  "admin_unlock": {
+    "en": "Admin panel unlocked",
+    "ru": "Панель администратора разблокирована"
+  },
+  "admin_lock": {
+    "en": "Admin panel locked",
+    "ru": "Панель администратора заблокирована"
+  },
+  "admin_change": {
+    "en": "Admin code changed",
+    "ru": "Код администратора изменён"
+  },
+  "admin_recover": {
+    "en": "Admin access recovered",
+    "ru": "Доступ администратора восстановлен"
+  },
+  "admin_code_failed": {
+    "en": "Incorrect admin code attempt",
+    "ru": "Попытка ввода неверного кода"
+  },
+  "admin_recovery_failed": {
+    "en": "Incorrect recovery key attempt",
+    "ru": "Попытка ввода неверного ключа восстановления"
+  },
+  "Email va parol orqali shaxsiy kabinetingizga kiring.": {
+    "en": "Sign in to your account with email and password.",
+    "ru": "Войдите в личный кабинет с email и паролем."
+  },
+  "Elektron pochta": {
+    "en": "Email",
+    "ru": "Электронная почта"
+  },
+  "Parol": {
+    "en": "Password",
+    "ru": "Пароль"
+  },
+  "Kamida 12 belgi": {
+    "en": "At least 12 characters",
+    "ru": "Не менее 12 символов"
+  },
+  "Parolni tiklash": {
+    "en": "Reset password",
+    "ru": "Восстановление пароля"
+  },
+  "Tasdiqlashga yuborish": {
+    "en": "Submit for approval",
+    "ru": "Отправить на подтверждение"
+  },
+  "Tiklash havolasini yuborish": {
+    "en": "Send reset link",
+    "ru": "Отправить ссылку восстановления"
+  },
+  "Kirishga qaytish": {
+    "en": "Back to sign in",
+    "ru": "Вернуться ко входу"
+  },
+  "Parolni unutdingizmi?": {
+    "en": "Forgot password?",
+    "ru": "Забыли пароль?"
+  },
+  "Hisob vakolatini administrator tasdiqlaydi. O‘quvchi hisobi tasdiqlangan taklif bilan bog‘lanadi.": {
+    "en": "Account permissions require admin approval. Student accounts are linked through a confirmed invitation.",
+    "ru": "Права подтверждает администратор. Учётная запись ученика привязывается по подтверждённому приглашению."
+  },
+  "Tasdiqlash havolasi yaroqsiz yoki muddati tugagan.": {
+    "en": "The confirmation link is invalid or expired.",
+    "ru": "Ссылка подтверждения недействительна или устарела."
+  },
+  "Emailingizdagi tasdiqlash havolasini oching. Keyin hisobga kiring.": {
+    "en": "Open the confirmation link in your email, then sign in.",
+    "ru": "Откройте ссылку подтверждения в письме, затем войдите."
+  },
+  "Hisob mavjud bo‘lsa, emailga tiklash havolasi yuboriladi.": {
+    "en": "If the account exists, a reset link will be emailed.",
+    "ru": "Если учётная запись существует, ссылка восстановления будет отправлена на email."
+  },
+  "Parol yangilandi. Yangi parol bilan kiring.": {
+    "en": "Password updated. Sign in with your new password.",
+    "ru": "Пароль обновлён. Войдите с новым паролем."
+  },
+  "Parollar bir xil emas": {
+    "en": "Passwords do not match",
+    "ru": "Пароли не совпадают"
+  },
+  "Yangi parol": {
+    "en": "New password",
+    "ru": "Новый пароль"
+  },
+  "Parolni takrorlang": {
+    "en": "Repeat password",
+    "ru": "Повторите пароль"
+  },
+  "Email yoki parol noto‘g‘ri, yoxud email tasdiqlanmagan.": {
+    "en": "Incorrect email or password, or email is not confirmed.",
+    "ru": "Неверный email или пароль, либо email не подтверждён."
+  },
+  "Parol 12–128 belgidan iborat bo‘lsin": {
+    "en": "Use a password of 12–128 characters",
+    "ru": "Пароль должен содержать 12–128 символов"
+  },
+  "To‘g‘ri email manzilini kiriting": {
+    "en": "Enter a valid email address",
+    "ru": "Введите действительный email"
+  },
+  "Kirish xizmati sozlanmagan yoki vaqtincha ishlamayapti.": {
+    "en": "Authentication is not configured or temporarily unavailable.",
+    "ru": "Сервис входа не настроен или временно недоступен."
+  },
+  "PDF, PNG, JPG, MP3, WAV, MP4 yoki WebM · 4 MB gacha": {
+    "en": "PDF, PNG, JPG, MP3, WAV, MP4 or WebM · Up to 4 MB",
+    "ru": "PDF, PNG, JPG, MP3, WAV, MP4 или WebM · До 4 МБ"
+  },
+  "Dastlabki sozlash faqat sayt egasi uchun.": {
+    "en": "Initial setup is for the site owner only.",
+    "ru": "Первоначальная настройка доступна только владельцу сайта."
+  },
+  "1 dan 5 gacha baho tanlang.": {
+    "en": "Choose a rating from 1 to 5.",
+    "ru": "Выберите оценку от 1 до 5."
+  },
+  "Rahmat! Sharhingiz saqlandi.": {
+    "en": "Thank you! Your review was saved.",
+    "ru": "Спасибо! Ваш отзыв сохранён."
+  },
+  "Baho va sharhlar": {
+    "en": "Ratings and reviews",
+    "ru": "Оценки и отзывы"
+  },
+  "ta baho": {
+    "en": "ratings",
+    "ru": "оценок"
+  },
+  "Hali baho yo‘q": {
+    "en": "No ratings yet",
+    "ru": "Оценок пока нет"
+  },
+  "Sizning bahoyingiz": {
+    "en": "Your rating",
+    "ru": "Ваша оценка"
+  },
+  "Bahoingizni qoldiring": {
+    "en": "Leave your rating",
+    "ru": "Оставьте свою оценку"
+  },
+  "Izoh (ixtiyoriy)": {
+    "en": "Comment (optional)",
+    "ru": "Комментарий (необязательно)"
+  },
+  "Mashq bolangizga qanday ta’sir qildi?": {
+    "en": "How did the exercise work for your child?",
+    "ru": "Как упражнение подошло вашему ребёнку?"
+  },
+  "O‘chirish": {
+    "en": "Delete",
+    "ru": "Удалить"
+  },
+  "Yangilash": {
+    "en": "Update",
+    "ru": "Обновить"
+  },
+  "Sharhingiz administrator tomonidan vaqtincha yashirilgan.": {
+    "en": "Your review was temporarily hidden by an administrator.",
+    "ru": "Ваш отзыв временно скрыт администратором."
+  },
+  "Sharh qoldirish uchun tasdiqlangan ota-ona, logoped yoki administrator hisobi kerak.": {
+    "en": "A confirmed parent, speech therapist or administrator account is required to leave a review.",
+    "ru": "Чтобы оставить отзыв, нужен подтверждённый аккаунт родителя, логопеда или администратора."
+  },
+  "Baho qoldirish uchun": {
+    "en": "To leave a rating, please",
+    "ru": "Чтобы оставить оценку,"
+  },
+  "hisobingizga kiring": {
+    "en": "sign in",
+    "ru": "войдите в аккаунт"
+  },
+  "Birinchi sharhni siz qoldiring.": {
+    "en": "Be the first to leave a review.",
+    "ru": "Оставьте первый отзыв."
+  },
+  "Sharhlarni yuklab bo‘lmadi. Qayta urinib ko‘ring.": {
+    "en": "Reviews could not be loaded. Please try again.",
+    "ru": "Не удалось загрузить отзывы. Попробуйте ещё раз."
+  },
+  "Sharh qoldirish uchun hisobingizga kiring.": {
+    "en": "Sign in to leave a review.",
+    "ru": "Войдите, чтобы оставить отзыв."
+  },
+  "Material topilmadi": {
+    "en": "Material not found",
+    "ru": "Материал не найден"
+  },
+  "Sharhda havola qoldirib bo‘lmaydi.": {
+    "en": "Links are not allowed in reviews.",
+    "ru": "В отзывах нельзя оставлять ссылки."
+  },
+  "Juda ko‘p sharh yuborildi. Birozdan keyin urinib ko‘ring.": {
+    "en": "Too many reviews were submitted. Please try again later.",
+    "ru": "Отправлено слишком много отзывов. Попробуйте позже."
+  },
+  "Sharh 600 belgidan oshmasin.": {
+    "en": "A review must not exceed 600 characters.",
+    "ru": "Отзыв не должен превышать 600 символов."
+  },
+  "Kirish xizmati vaqtincha ishlamayapti. Birozdan keyin qayta urinib ko‘ring.": {
+    "en": "The sign-in service is temporarily unavailable. Please try again shortly.",
+    "ru": "Служба входа временно недоступна. Попробуйте чуть позже."
+  },
+  "Sayt hali to‘liq sozlanmagan. Administrator Vercel’dagi Supabase sozlamalarini (NEXT_PUBLIC_SUPABASE_URL va NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY) tekshirib, saytni qayta joylashtirsin (Redeploy).": {
+    "en": "The site is not fully configured yet. The administrator should check the Supabase settings in Vercel (NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY) and redeploy the site.",
+    "ru": "Сайт ещё не настроен полностью. Администратору нужно проверить настройки Supabase в Vercel (NEXT_PUBLIC_SUPABASE_URL и NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY) и выполнить Redeploy."
+  },
+  "Sayt manzili sozlanmagan. Vercel’da NEXT_PUBLIC_SITE_URL ni to‘liq manzil (https://…) bilan kiriting va saytni qayta joylashtiring (Redeploy).": {
+    "en": "The site address is not configured. In Vercel set NEXT_PUBLIC_SITE_URL to the full address (https://…) and redeploy.",
+    "ru": "Адрес сайта не настроен. В Vercel укажите NEXT_PUBLIC_SITE_URL полным адресом (https://…) и выполните Redeploy."
+  },
+  "Noto‘g‘ri so‘rov": {
+    "en": "Invalid request",
+    "ru": "Некорректный запрос"
+  },
+  "Email hali tasdiqlanmagan. Pochtangizdagi tasdiqlash havolasini oching.": {
+    "en": "Your email is not confirmed yet. Open the confirmation link in your inbox.",
+    "ru": "Email ещё не подтверждён. Откройте ссылку подтверждения в почте."
+  },
+  "Parol yetarlicha xavfsiz emas. Uzunroq va murakkabroq parol tanlang.": {
+    "en": "The password is not secure enough. Choose a longer, more complex password.",
+    "ru": "Пароль недостаточно надёжный. Выберите более длинный и сложный пароль."
+  },
+  "Juda ko‘p urinish bo‘ldi. Birozdan keyin qayta urinib ko‘ring.": {
+    "en": "Too many attempts. Please try again in a little while.",
+    "ru": "Слишком много попыток. Повторите чуть позже."
+  },
+  "Ro‘yxatdan o‘tish hozircha o‘chirilgan.": {
+    "en": "Registration is currently disabled.",
+    "ru": "Регистрация сейчас отключена."
+  },
+  "Bu email manzili qabul qilinmadi. Boshqa manzil bilan urinib ko‘ring.": {
+    "en": "This email address was not accepted. Try a different address.",
+    "ru": "Этот email не принят. Попробуйте другой адрес."
+  },
+  "Tasdiqlash emailini yuborib bo‘lmadi. Administrator Supabase’da SMTP sozlamasini tekshirsin.": {
+    "en": "The confirmation email could not be sent. The administrator should check the SMTP settings in Supabase.",
+    "ru": "Не удалось отправить письмо подтверждения. Администратору нужно проверить настройки SMTP в Supabase."
+  },
+  "Saytni yuklab olish": {
+    "en": "Download the site",
+    "ru": "Скачать сайт"
+  },
+  "Tayyorlanmoqda…": {
+    "en": "Preparing…",
+    "ru": "Подготовка…"
+  },
+  "Yuklandi": {
+    "en": "Downloaded",
+    "ru": "Скачано"
+  },
+  "Yuklab bo‘lmadi. Qayta urinib ko‘ring.": {
+    "en": "Download failed. Please try again.",
+    "ru": "Не удалось скачать. Попробуйте ещё раз."
+  },
+  "Ilova o‘rnatildi": {
+    "en": "App installed",
+    "ru": "Приложение установлено"
+  },
+  "Sharhlar": {
+    "en": "Reviews",
+    "ru": "Отзывы"
+  },
+  "Baho va izohlarni ko‘rish, yashirish.": {
+    "en": "View and hide ratings and comments.",
+    "ru": "Просмотр и скрытие оценок и комментариев."
+  },
+  "Jami baholar": {
+    "en": "Total ratings",
+    "ru": "Всего оценок"
+  },
+  "O‘rtacha baho": {
+    "en": "Average rating",
+    "ru": "Средняя оценка"
+  },
+  "Filtr": {
+    "en": "Filter",
+    "ru": "Фильтр"
+  },
+  "Barcha sharhlar": {
+    "en": "All reviews",
+    "ru": "Все отзывы"
+  },
+  "Faqat izohli": {
+    "en": "With comments only",
+    "ru": "Только с комментариями"
+  },
+  "Yashirilganlar": {
+    "en": "Hidden ones",
+    "ru": "Скрытые"
+  },
+  "Material": {
+    "en": "Material",
+    "ru": "Материал"
+  },
+  "Ko‘rsatish": {
+    "en": "Show",
+    "ru": "Показать"
+  },
+  "Yashirish": {
+    "en": "Hide",
+    "ru": "Скрыть"
+  },
+  "Bu sharh butunlay o‘chiriladi. Davom etamizmi?": {
+    "en": "This review will be permanently deleted. Continue?",
+    "ru": "Этот отзыв будет удалён навсегда. Продолжить?"
+  },
+  "Hozircha sharhlar yo‘q.": {
+    "en": "There are no reviews yet.",
+    "ru": "Отзывов пока нет."
+  }
+}

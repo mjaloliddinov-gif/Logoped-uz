@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791649932041,
+      "tag": "0000_violet_dust",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791650862115,
+      "tag": "0001_misty_princess_powerful",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791689586919,
+      "tag": "0002_concerned_captain_america",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791730459700,
+      "tag": "0003_slimy_sir_ram",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791825763012,
+      "tag": "0004_public_stellaris",
+      "breakpoints": true
+    }
+  ]
+}

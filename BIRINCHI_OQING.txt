@@ -1,0 +1,17 @@
+LOGOPED.UZ — VERCEL NUSXASI
+
+1. README_UZ.md yo‘riqnomasini oching.
+2. Supabase SQL Editor’da supabase/setup.sql faylini ishlating.
+3. Email Auth, yopiq Storage bucket va SMTP’ni sozlang.
+4. Fayllarni GitHub’ga yuklang va Vercel’da Next.js loyihasi sifatida import qiling.
+5. .env.example dagi o‘zgaruvchilarga haqiqiy qiymatlarni Vercel’da kiriting.
+6. ADMIN_EMAIL emaili bilan ro‘yxatdan o‘ting, emailni tasdiqlang va /admin orqali sozlang.
+
+Bu ZIP haqiqiy kalit/parol yoki avvalgi saytdagi shaxsiy ma’lumotlarni o‘z ichiga olmaydi.
+Hozirgi ishlaydigan sayt alohida saqlanadi. Yangi nusxaga ma’lumotlar avtomatik o‘tmaydi.
+
+Node: 24.x
+Framework: Next.js
+Install: npm ci
+Build: npm run build
+Output: .next
