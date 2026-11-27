@@ -1,0 +1,3 @@
+import {identity,database,json} from '../../../lib/server';
+export const dynamic='force-dynamic';
+export async function GET(){try{const {user,member}=await identity({allowLockedAdmin:true});const profile=await database().prepare('SELECT value FROM settings WHERE id=?').bind('profile:'+member.id).first<{value:string}>();const init=await database().prepare("SELECT value FROM settings WHERE id='initialized'").first();return json({me:{id:member.id,email:member.email,role:member.role,name:user.displayName,profile:profile?JSON.parse(profile.value):null},initialized:!!init})}catch{return json({me:null})}}
