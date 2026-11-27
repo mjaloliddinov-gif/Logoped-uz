@@ -21,6 +21,8 @@ CREATE TABLE IF NOT EXISTS admin_grants(token_hash text PRIMARY KEY,owner text N
 CREATE INDEX IF NOT EXISTS admin_grants_owner ON admin_grants(owner);
 CREATE OR REPLACE FUNCTION logoped.json_extract(document text,path text) RETURNS text LANGUAGE sql IMMUTABLE STRICT AS $$ SELECT document::jsonb #>> string_to_array(substr(path,3),'.') $$;
 CREATE OR REPLACE FUNCTION logoped.json_set(document text,path text,new_value text) RETURNS text LANGUAGE sql IMMUTABLE STRICT AS $$ SELECT jsonb_set(document::jsonb,string_to_array(substr(path,3),'.'),to_jsonb(new_value),true)::text $$;
+ALTER FUNCTION logoped.json_extract(text,text) SET search_path=pg_catalog;
+ALTER FUNCTION logoped.json_set(text,text,text) SET search_path=pg_catalog;
 ALTER TABLE members ENABLE ROW LEVEL SECURITY;
 ALTER TABLE settings ENABLE ROW LEVEL SECURITY;
 ALTER TABLE records ENABLE ROW LEVEL SECURITY;
@@ -39,6 +41,7 @@ DO $$ BEGIN
   REVOKE ALL ON ALL TABLES IN SCHEMA logoped FROM anon,authenticated;
  END IF;
 END $$;
+-- Private file bucket (4 MiB). Do NOT add public read/write policies.
+INSERT INTO storage.buckets(id,name,public,file_size_limit) VALUES ('logoped-private','logoped-private',false,4194304) ON CONFLICT (id) DO NOTHING;
 COMMIT;
--- In Supabase Storage UI create a PRIVATE bucket named logoped-private (4 MiB limit).
--- Do NOT add public read/write policies. Only the server's secret key accesses this bucket.
+-- Only the server's secret key accesses this bucket.
