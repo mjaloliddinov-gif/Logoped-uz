@@ -1,6 +1,6 @@
 import {json} from '../../lib/server';
 import {allProblems,supabaseEnv} from '../../lib/auth-config';
-import {database} from '../../lib/postgres';
+import {database,caCertificates} from '../../lib/postgres';
 export const dynamic='force-dynamic';
 // Public diagnostics for the site owner. Reports variable NAMES and problem categories only, never values.
 let cached:{at:number;result:any}|null=null;
@@ -14,7 +14,12 @@ function category(e:any){const m=String(e?.message||'')+' '+String(e?.code||'');
 async function checkDatabase(){
  if(cached&&Date.now()-cached.at<30000)return cached.result;
  let result:any;
- try{await database.prepare('SELECT 1 FROM members LIMIT 1').first();result={status:'ok'}}catch(e){console.error('[health] database:',category(e));result={status:'error',reason:category(e)}}
+ const ca=caCertificates(process.env.DATABASE_CA_CERT).length;
+ try{await database.prepare('SELECT 1 FROM members LIMIT 1').first();result={status:'ok'}}catch(e:any){
+  // Only fixed error codes (e.g. SELF_SIGNED_CERT_IN_CHAIN) are reported, never messages that could contain hosts or users.
+  const code=typeof e?.code==='string'&&/^[A-Z0-9_]{2,60}$/.test(e.code)?e.code:undefined;
+  console.error('[health] database:',category(e),code);result={status:'error',reason:category(e),...(code?{code}:{}),caCertificates:ca};
+ }
  cached={at:Date.now(),result};return result;
 }
 async function checkAuth(){
