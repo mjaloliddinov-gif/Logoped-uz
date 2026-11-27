@@ -11,7 +11,7 @@ export async function readApiResponse(response:Response):Promise<any>{
     throw new ApiError('Ma’lumot o‘rniga boshqa sahifa ochildi. Hisobga qayta kiring yoki sahifani yangilang.','unexpected_response');
   }
   let data:any;try{data=await response.json()}catch{throw new ApiError('Server javobini o‘qib bo‘lmadi. Qayta urinib ko‘ring.','invalid_response')}
-  if(!response.ok)throw new ApiError(typeof data?.error==='string'?data.error:'So‘rov bajarilmadi. Qayta urinib ko‘ring.',response.status===423&&data?.code==='admin_locked'?'admin_locked':response.status===403?'forbidden':'request_failed');
+  if(!response.ok)throw new ApiError(typeof data?.error==='string'?data.error:'So‘rov bajarilmadi. Qayta urinib ko‘ring.',response.status===423&&data?.code==='admin_locked'?'admin_locked':response.status===403?'forbidden':typeof data?.code==='string'&&/^[a-z_]{1,40}$/.test(data.code)?data.code:'request_failed');
   if(!data||typeof data!=='object'||Array.isArray(data))throw new ApiError('Server javobi kutilgan shaklda emas. Sahifani yangilang.','invalid_response');
   return data;
 }

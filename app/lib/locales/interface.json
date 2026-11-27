@@ -2978,5 +2978,25 @@
   "Hozircha sharhlar yo‘q.": {
     "en": "There are no reviews yet.",
     "ru": "Отзывов пока нет."
+  },
+  "Tasdiqlash havolasining muddati tugagan. Kirib ko‘ring yoki yangi havola so‘rang.": {
+    "en": "The confirmation link has expired. Try signing in or request a new link.",
+    "ru": "Срок действия ссылки истёк. Попробуйте войти или запросите новую ссылку."
+  },
+  "Email tasdiqlandi.": {
+    "en": "Email confirmed.",
+    "ru": "Email подтверждён."
+  },
+  "So‘rovingiz administratorga yuborilgan. Rol tasdiqlangach, kabinet ochiladi.": {
+    "en": "Your request has been sent to the administrator. Your dashboard opens once your role is approved.",
+    "ru": "Ваша заявка отправлена администратору. Кабинет откроется после подтверждения роли."
+  },
+  "Tasdiqlash havolasini qayta yuborish": {
+    "en": "Resend confirmation link",
+    "ru": "Отправить ссылку повторно"
+  },
+  "Hisob tasdiqlanmagan bo‘lsa, emailga yangi tasdiqlash havolasi yuboriladi.": {
+    "en": "If the account is not confirmed yet, a new confirmation link will be emailed.",
+    "ru": "Если аккаунт ещё не подтверждён, на email придёт новая ссылка."
   }
 }

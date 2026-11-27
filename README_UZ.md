@@ -39,8 +39,10 @@ Bu paket haqiqiy Next.js ilovasi. `npm run build` `.next` papkasini va `routes-m
 Supabase → **Authentication → URL Configuration**:
 
 - **Site URL**: Vercel domeningiz, `NEXT_PUBLIC_SITE_URL` bilan bir xil.
-- **Redirect URLs**: `https://SIZNING-LOYIHA.vercel.app/auth/confirm`.
+- **Redirect URLs**: `https://SIZNING-LOYIHA.vercel.app/auth/confirm` va `https://SIZNING-LOYIHA.vercel.app/auth/confirm?next=/reset-password` (yoki oddiyroq: `https://SIZNING-LOYIHA.vercel.app/**`).
 - Lokal ishlab chiqish uchun alohida test loyihasida `http://localhost:3000/auth/confirm` qo‘shish mumkin.
+
+Sayt ikkala havola turini qabul qiladi: Supabase’ning standart shablonini (`{{ .ConfirmationURL }}`) o‘zgartirmasangiz ham tasdiqlash ishlaydi. Quyidagi shablon tavsiya etiladi, chunki u boshqa brauzerda ochilganda ham ishlaydi.
 
 **Email Templates → Confirm signup** dagi havola:
 

@@ -25,15 +25,16 @@ export async function POST(req:Request){
   let b:any;try{b=JSON.parse(raw)}catch{return json({error:'Noto‘g‘ri so‘rov'},400)}
   if(!b||typeof b!=='object'||Array.isArray(b))return json({error:'Noto‘g‘ri so‘rov'},400);
   const email=typeof b.email==='string'?b.email.trim().toLowerCase():'';
-  if(['login','signup','recover'].includes(b.action)&&(!/^\S+@\S+\.\S+$/.test(email)||email.length>200))return json({error:'To‘g‘ri email manzilini kiriting'},400);
+  if(['login','signup','recover','resend'].includes(b.action)&&(!/^\S+@\S+\.\S+$/.test(email)||email.length>200))return json({error:'To‘g‘ri email manzilini kiriting'},400);
   if(['login','signup','password'].includes(b.action)&&(typeof b.password!=='string'||b.password.length<12||b.password.length>128))return json({error:'Parol 12–128 belgidan iborat bo‘lsin'},400);
   if(b.action==='signup'&&(typeof b.name!=='string'||b.name.trim().length<2||b.name.length>80||!['parent','logoped'].includes(b.requestedRole)))return json({error:'Ism va rolni tanlang'},400);
   // Only emailed links need the site address; signing in must not depend on it.
   let origin='';
-  if(['signup','recover'].includes(b.action)){
+  if(['signup','recover','resend'].includes(b.action)){
    const configured=siteOrigin(),current=new URL(req.url).origin;
    if(!configured)return json({error:'Sayt manzili sozlanmagan. Vercel’da NEXT_PUBLIC_SITE_URL ni to‘liq manzil (https://…) bilan kiriting va saytni qayta joylashtiring (Redeploy).',code:'site_url_missing'},503);
-   if(configured!==current)return json({error:'Sayt manzili sozlamasi ('+configured+') joriy manzil ('+current+') bilan mos emas. NEXT_PUBLIC_SITE_URL ni to‘g‘rilang.',code:'site_url_mismatch'},503);
+   // www/apex or a preview address must not block sign-up: emailed links always point to the configured site, never to a request-supplied host.
+   if(configured!==current)console.error('[auth/account] site address differs, links use the configured one:',configured,'| request:',current);
    origin=configured;
   }
   const client=await authClient();
@@ -51,8 +52,14 @@ export async function POST(req:Request){
    if(error){console.error('[auth/signup] rejected:',(error as any).code||error.name,error.status);return signupFailure(error)}
    return json({ok:true,message:'Emailingizdagi tasdiqlash havolasini oching. Keyin hisobga kiring.'});
   }
+  if(b.action==='resend'){
+   const {error}=await client.auth.resend({type:'signup',email,options:{emailRedirectTo:origin+'/auth/confirm'}});
+   if(error){console.error('[auth/resend] not sent:',(error as any).code||error.name,error.status);if((error as any).code==='over_email_send_rate_limit'||(error as any).code==='over_request_rate_limit'||Number(error.status)===429)return json({error:'Juda ko‘p urinish bo‘ldi. Birozdan keyin qayta urinib ko‘ring.',code:'rate_limited'},429)}
+   // Same answer whether or not the account exists.
+   return json({ok:true,message:'Hisob tasdiqlanmagan bo‘lsa, emailga yangi tasdiqlash havolasi yuboriladi.'});
+  }
   if(b.action==='recover'){
-   const {error}=await client.auth.resetPasswordForEmail(email,{redirectTo:origin+'/auth/confirm'});
+   const {error}=await client.auth.resetPasswordForEmail(email,{redirectTo:origin+'/auth/confirm?next=/reset-password'});
    if(error)console.error('[auth/recover] not sent:',(error as any).code||error.name,error.status);
    return json({ok:true,message:'Hisob mavjud bo‘lsa, emailga tiklash havolasi yuboriladi.'});
   }

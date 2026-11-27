@@ -11,7 +11,7 @@
     "build": "next build --webpack",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "node tests/api.test.cjs && node tests/admin-security.test.cjs && node tests/preferences.test.cjs && node tests/postgres.test.cjs && node tests/auth-account.test.cjs && node tests/reviews.test.cjs && node tests/origin.test.cjs && node tests/api-client.test.cjs && node tests/assistant.test.cjs && node --experimental-strip-types tests/permissions.test.mjs",
+    "test": "node tests/api.test.cjs && node tests/admin-security.test.cjs && node tests/preferences.test.cjs && node tests/postgres.test.cjs && node tests/auth-account.test.cjs && node tests/auth-confirm.test.cjs && node tests/reviews.test.cjs && node tests/origin.test.cjs && node tests/api-client.test.cjs && node tests/assistant.test.cjs && node --experimental-strip-types tests/permissions.test.mjs",
     "setup:check": "node scripts/check-env.mjs"
   },
   "dependencies": {
@@ -19,7 +19,7 @@
     "@supabase/supabase-js": "2.117.3",
     "@tailwindcss/postcss": "4.2.1",
     "lucide-react": "1.31.0",
-    "next": "16.4.0",
+    "next": "16.4.6",
     "pg": "8.23.1",
     "react": "19.2.6",
     "react-dom": "19.2.6",
