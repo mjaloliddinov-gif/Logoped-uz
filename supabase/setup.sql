@@ -42,6 +42,10 @@ DO $$ BEGIN
  END IF;
 END $$;
 -- Private file bucket (4 MiB). Do NOT add public read/write policies.
-INSERT INTO storage.buckets(id,name,public,file_size_limit) VALUES ('logoped-private','logoped-private',false,4194304) ON CONFLICT (id) DO NOTHING;
+DO $$ BEGIN
+ IF to_regclass('storage.buckets') IS NOT NULL THEN
+  INSERT INTO storage.buckets(id,name,public,file_size_limit) VALUES ('logoped-private','logoped-private',false,4194304) ON CONFLICT (id) DO NOTHING;
+ END IF;
+END $$;
 COMMIT;
 -- Only the server's secret key accesses this bucket.
