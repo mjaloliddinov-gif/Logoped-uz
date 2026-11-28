@@ -37,6 +37,6 @@ export async function GET(req:Request){
   if(url.searchParams.get('next')==='/reset-password')recovery=true;
   if(recovery)return NextResponse.redirect(new URL('/reset-password',url.origin));
   await registerPending(user);
-  return NextResponse.redirect(new URL('/signup?confirmed=1',url.origin));
+  return NextResponse.redirect(new URL('/login?confirmed=1',url.origin));
  }catch(e){console.error('[auth/confirm]',e instanceof Error?e.name:'error');return fail('confirmation')}
 }

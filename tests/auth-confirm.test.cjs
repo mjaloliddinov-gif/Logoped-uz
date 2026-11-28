@@ -10,17 +10,17 @@ const go=async q=>(await mod.exports.GET(new Request('https://test.local/auth/co
 let n=0;const ok=(a,b)=>{assert.equal(a,b);n++};
 (async()=>{
  user={id:'u1',email:'p@test.local',user_metadata:{name:'Ali Valiyev',requestedRole:'parent'}};
- ok(await go('?token_hash=abc&type=email'),'https://test.local/signup?confirmed=1');
+ ok(await go('?token_hash=abc&type=email'),'https://test.local/login?confirmed=1');
  ok(calls[0][0],'otp');ok(batches.length,1);ok(batches[0][0].values.join(),'u1,p@test.local,pending');
  ok(JSON.parse(batches[0][1].values[1]).requestedRole,'parent');
  // Supabase default template ({{ .ConfirmationURL }}) arrives as ?code=
- ok(await go('?code=xyz'),'https://test.local/signup?confirmed=1');ok(calls[1].join(),'code,xyz');
+ ok(await go('?code=xyz'),'https://test.local/login?confirmed=1');ok(calls[1].join(),'code,xyz');
  ok(await go('?token_hash=abc&type=recovery'),'https://test.local/reset-password');
  ok(await go('?code=xyz&next=/reset-password'),'https://test.local/reset-password');
  // a role that is not allowed at sign-up is never registered
  batches=[];user={id:'u2',email:'x@test.local',user_metadata:{name:'X Y',requestedRole:'admin'}};await go('?code=q');ok(batches.length,0);
  // database trouble must not block the confirmed sign-in
- dbFail=true;user={id:'u3',email:'z@test.local',user_metadata:{name:'Zarina',requestedRole:'logoped'}};ok(await go('?code=q'),'https://test.local/signup?confirmed=1');dbFail=false;
+ dbFail=true;user={id:'u3',email:'z@test.local',user_metadata:{name:'Zarina',requestedRole:'logoped'}};ok(await go('?code=q'),'https://test.local/login?confirmed=1');dbFail=false;
  otpError={code:'otp_expired'};ok(await go('?token_hash=abc&type=email'),'https://test.local/login?error=expired');otpError=null;
  codeError={name:'AuthApiError'};ok(await go('?code=bad'),'https://test.local/login?error=confirmation');codeError=null;
  ok(await go('?token_hash=abc&type=evil'),'https://test.local/login?error=confirmation');
