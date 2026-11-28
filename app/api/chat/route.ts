@@ -1,4 +1,5 @@
 import {identity,database as db,json,sameOrigin,audit} from '../../lib/server';
+import {esc,telegramPush} from '../../lib/telegram-notify';
 export const dynamic='force-dynamic';
 const allowed=(role:string)=>['admin','parent','student'].includes(role);
 async function peerFor(m:any,id:string){const p=await db().prepare('SELECT id,role FROM members WHERE id=?').bind(id).first<any>();return p&&(m.role==='admin'?['parent','student'].includes(p.role):p.role==='admin')?p:null}
@@ -13,5 +14,5 @@ export async function POST(req:Request){if(!sameOrigin(req))return json({error:'
 try{const raw=await req.text();if(raw.length>12000)return json({error:'Xabar juda katta'},413);const b=JSON.parse(raw);if(typeof b.peer!=='string'||!await peerFor(m,b.peer))return json({error:'Qabul qiluvchi topilmadi yoki ruxsat yo‘q'},403);
 if(b.action==='read'){if(!Array.isArray(b.ids)||b.ids.length>50||b.ids.some((id:any)=>typeof id!=='string'||id.length>80))return json({error:'Xabarlar ro‘yxati noto‘g‘ri'},400);if(b.ids.length)await db().batch(b.ids.map((id:string)=>db().prepare("UPDATE records SET data=json_set(data,'$.seen','1') WHERE id=? AND kind='message' AND owner=? AND json_extract(data,'$.recipient')=?").bind(id,b.peer,m.id)));return json({ok:true})}
 if(b.action!=='send'||typeof b.text!=='string'||!b.text.trim()||b.text.length>3000)return json({error:'1–3000 belgidan iborat xabar yozing'},400);
-const id=crypto.randomUUID(),now=new Date().toISOString();await db().batch([db().prepare('INSERT INTO records VALUES (?,?,?,?,?,?)').bind(id,'message',m.id,null,JSON.stringify({recipient:b.peer,text:b.text.trim(),seen:'0'}),now),db().prepare("INSERT INTO notifications VALUES (?,?,?,?,'0')").bind(crypto.randomUUID(),b.peer,'Chatda yangi xabar bor',now),audit(m.id,'chat_message',id)]);return json({ok:true,id});
+const id=crypto.randomUUID(),now=new Date().toISOString();await db().batch([db().prepare('INSERT INTO records VALUES (?,?,?,?,?,?)').bind(id,'message',m.id,null,JSON.stringify({recipient:b.peer,text:b.text.trim(),seen:'0'}),now),db().prepare("INSERT INTO notifications VALUES (?,?,?,?,'0')").bind(crypto.randomUUID(),b.peer,'Chatda yangi xabar bor',now),audit(m.id,'chat_message',id)]);await telegramPush([b.peer],'✉️ <b>Yangi xabar</b>'+(m.role==='admin'?' (administrator)':'')+'\n\n'+esc(b.text,1500));return json({ok:true,id});
 }catch{return json({error:'Xabar saqlanmadi. Qayta urinib ko‘ring.'},400)}}

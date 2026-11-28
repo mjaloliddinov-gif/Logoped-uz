@@ -1,6 +1,7 @@
 import {identity,database,json,sameOrigin} from '../../lib/server';
 import {canStudent} from '../../lib/permissions';
 import {exercises} from '../../lib/content';
+import {describeRecord,telegramPush} from '../../lib/telegram-notify';
 export const dynamic='force-dynamic';
 export async function POST(req:Request){
  if(!sameOrigin(req))return json({error:'So‘rov manbasi rad etildi'},403);
@@ -33,6 +34,7 @@ export async function POST(req:Request){
  db.prepare('INSERT OR IGNORE INTO records VALUES (?,?,?,?,?,?)').bind(taskId,'task',pupil.owner,pupil.id,JSON.stringify(task),now.toISOString()),
  ...recipients.map(id=>db.prepare("INSERT OR IGNORE INTO notifications VALUES (?,?,?,?,'0')").bind('auto-'+key+'-'+id,id,'Dars tugatildi. Mavzu bo‘yicha yangi uyga vazifa bor.',now.toISOString())),
  db.prepare('INSERT OR IGNORE INTO audit VALUES (?,?,?,?,?)').bind('auto-'+key,m.id,'lesson_completed',taskId,now.toISOString())]);
+ if(!existing)await telegramPush(recipients.filter(id=>id!==m.id),describeRecord('task',task,pupil.data.name,true)!);
  return json({ok:true,taskId,alreadyCompleted:!!existing});
  }catch{return json({error:'Dars natijasi saqlanmadi. Qayta urinib ko‘ring.'},400)}
 }
