@@ -174,3 +174,16 @@ nav button{transition:color .2s ease,box-shadow .2s ease,transform .2s ease}nav 
 @media print{.reviews,.download-button,.download-error{display:none!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}button.primary::after,a.primary::after{display:none}}
 .article-card .rating-badge{margin:8px 0 0}
+/* Telegram sign-in for parents */
+.telegram-login{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+.telegram-lead{margin:0;color:var(--muted)}
+.telegram-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.telegram-steps li{display:flex;gap:12px;align-items:flex-start}
+.telegram-steps li>span{flex:0 0 30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:800}
+.telegram-steps li>div{flex:1;display:flex;flex-direction:column;gap:9px;min-width:0}
+.telegram-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#229ed9;border-color:#229ed9;text-decoration:none}
+.telegram-code{display:flex;gap:8px;flex-wrap:wrap}
+.telegram-code input{flex:1 1 140px;min-width:0;padding:13px 15px;border-radius:11px;font-size:22px;letter-spacing:.3em;text-align:center;font-variant-numeric:tabular-nums}
+.telegram-code button{display:inline-flex;align-items:center;gap:6px}
+.email-toggle{display:inline-flex;align-items:center;gap:6px;align-self:flex-start}
+.primary.telegram-button{background:#229ed9;border-color:#229ed9;box-shadow:0 3px 0 #1a7fae;color:#fff}
