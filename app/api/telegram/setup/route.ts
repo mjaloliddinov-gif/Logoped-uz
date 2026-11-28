@@ -10,7 +10,7 @@ export async function GET(req:Request){
  const site=siteOrigin();if(!site)return json({error:'NEXT_PUBLIC_SITE_URL sozlanmagan'},503);
  try{
   const me=await telegram('getMe',{});
-  await telegram('setWebhook',{url:site+'/api/telegram/webhook',secret_token:secret,allowed_updates:['message'],drop_pending_updates:true});
+  await telegram('setWebhook',{url:site+'/api/telegram/webhook',secret_token:secret,allowed_updates:['message','callback_query'],drop_pending_updates:true});
   await telegram('setMyCommands',{commands:[{command:'start',description:'Ro‘yxatdan o‘tish'},{command:'kod',description:'Saytga kirish kodi'}]});
   await telegram('setMyDescription',{description:'LOGOPED.UZ — logoped, bola va ota-onani bog‘laydigan platforma. Shu yerda ro‘yxatdan o‘ting va saytga kirish kodini oling.'});
   await putSetting('telegram_bot',{username:me.username}).run();
