@@ -296,3 +296,12 @@ html,body{overflow-x:clip}
 .code-help{display:flex;flex-direction:column;gap:10px;padding:18px;border:2px dashed var(--line);border-radius:var(--bubble);background:#fff}
 .code-help p{margin:0;color:var(--muted)}
 .admin-entry-link{background:none;border:0;font-size:13px;opacity:.75}
+/* simple cabinet tabs: big, icon-led, five per role */
+.simple-tabs{flex-wrap:wrap;gap:8px}
+.simple-tabs button,.more-row button{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:800;padding:12px 18px;min-height:48px}
+.simple-tabs button span,.more-row button span{font-size:20px;line-height:1}
+.more-tabs{background:transparent!important;border:2px dashed var(--line)!important;color:var(--muted)!important}
+.more-tabs.open{border-color:var(--turq)!important;color:var(--turq)!important}
+.more-row{margin-top:-6px;opacity:.95}
+.more-row button{font-size:14px;min-height:42px;padding:9px 14px}
+@media(max-width:600px){.simple-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.simple-tabs button{justify-content:flex-start}}

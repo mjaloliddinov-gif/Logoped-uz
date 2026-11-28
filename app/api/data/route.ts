@@ -18,17 +18,26 @@ export async function GET(){try{const {user:u,member:m}=await identity();
 const care=careStaff(m)?1:0,parent=m.role==='parent'?1:0,child=m.role==='student'?1:0;
 const access="((?=1 AND owner=?) OR (?=1 AND json_extract(data,'$.parent')=?) OR (?=1 AND json_extract(data,'$.account')=?))";
 const params=[care,m.id,parent,m.id,child,m.id];
-const result=await db().prepare(`SELECT * FROM records WHERE kind IN ('exercise','article','video','resource','sound','question') OR (kind='student' AND ${access}) OR (student IN (SELECT id FROM records WHERE kind='student' AND ${access})) OR (owner=? AND student IS NULL AND kind IN ('completion','favorite')) ORDER BY created DESC`).bind(...params,...params,m.id).all<any>();
+// Independent reads run in parallel: one network round trip each instead of a chain of twelve.
+const admin=m.role==='admin';
+const [result,profileRows,memberRows,profile,today,init,schedule,contact,notificationRows,logRows,inviteRows]=await Promise.all([
+ db().prepare(`SELECT * FROM records WHERE kind IN ('exercise','article','video','resource','sound','question') OR (kind='student' AND ${access}) OR (student IN (SELECT id FROM records WHERE kind='student' AND ${access})) OR (owner=? AND student IS NULL AND kind IN ('completion','favorite')) ORDER BY created DESC`).bind(...params,...params,m.id).all<any>(),
+ admin?db().prepare("SELECT id,value FROM settings WHERE id LIKE 'profile:%'").all<any>():Promise.resolve({results:[] as any[]}),
+ admin?db().prepare('SELECT * FROM members').all<any>():Promise.resolve({results:[] as any[]}),
+ setting('profile:'+m.id),setting('today'),setting('initialized'),setting('today_schedule'),setting('contact'),
+ db().prepare('SELECT * FROM notifications WHERE owner=? ORDER BY created DESC LIMIT 60').bind(m.id).all(),
+ admin?db().prepare('SELECT * FROM audit ORDER BY created DESC LIMIT 50').all():Promise.resolve({results:[] as any[]}),
+ m.role!=='student'?db().prepare('SELECT id,email,role,created,expires,status FROM invites WHERE owner=? ORDER BY created DESC').bind(m.id).all():Promise.resolve({results:[] as any[]}),
+]);
 let records=result.results.map(decode).filter((r:any)=>publicKinds.includes(r.kind)?(r.data.published!==false||m.role==='admin'||(m.role==='logoped'&&r.owner===m.id))&&(r.data.access!=='staff'||staff(m)):true);
 if(m.role==='student')records=records.filter((r:any)=>publicKinds.includes(r.kind)||['student','task','grade','completion','favorite'].includes(r.kind)).map(studentView);
-const profiles=m.role==='admin'?(await db().prepare("SELECT id,value FROM settings WHERE id LIKE 'profile:%'").all<any>()).results:[];
-const users=m.role==='admin'?(await db().prepare('SELECT * FROM members').all<any>()).results.map(person=>({...person,profile:JSON.parse(profiles.find(p=>p.id==='profile:'+person.id)?.value||'null')})):[];
-const profile=await setting('profile:'+m.id),today=await setting('today'),init=await setting('initialized'),schedule=await setting('today_schedule'),contact=await setting('contact');
+const profiles=profileRows.results;
+const users=memberRows.results.map((person:any)=>({...person,profile:JSON.parse(profiles.find((p:any)=>p.id==='profile:'+person.id)?.value||'null')}));
 const day=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tashkent',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const planned=schedule?JSON.parse(schedule.value):{};
-const notifications=(await db().prepare('SELECT * FROM notifications WHERE owner=? ORDER BY created DESC LIMIT 60').bind(m.id).all()).results;
-const logs=m.role==='admin'?(await db().prepare('SELECT * FROM audit ORDER BY created DESC LIMIT 50').all()).results:[];
-const invites=m.role!=='student'?(await db().prepare('SELECT id,email,role,created,expires,status FROM invites WHERE owner=? ORDER BY created DESC').bind(m.id).all()).results:[];
+const notifications=notificationRows.results;
+const logs=logRows.results;
+const invites=inviteRows.results;
 return reply({me:{...m,name:u.displayName,profile:profile?JSON.parse(profile.value):null},records,users,notifications,logs,invites,today:planned[day]||today?.value,todaySchedule:m.role==='admin'?planned:undefined,contact:contact?JSON.parse(contact.value):null,initialized:!!init});
 }catch(e){if(e instanceof AdminLocked)return reply({error:'Admin kodini kiriting',code:'admin_locked'},423);return reply({error:'Ma’lumotlarni ochib bo‘lmadi. Hisobingizga kirganingizni tekshiring.'},401)}}
 export async function POST(req:Request){try{if(!sameOrigin(req))return reply({error:'So‘rov manbasi rad etildi'},403);const {user:u,member:m}=await identity();const raw=await req.text();if(raw.length>60000)return reply({error:'Ma’lumot hajmi juda katta'},413);const b=JSON.parse(raw),now=new Date().toISOString();const audit=(a:string,t:string)=>log(m.id,a,t);

@@ -32,8 +32,16 @@ function connection(){
  if(pool)return pool;
  const value=process.env.DATABASE_URL;if(!value)throw Error('DATABASE_URL sozlanmagan');
  const url=new URL(value);url.searchParams.delete('sslmode');
- pool=new Pool({connectionString:url.toString(),max:3,idleTimeoutMillis:20000,connectionTimeoutMillis:10000,ssl:(()=>{const extra=caCertificates(process.env.DATABASE_CA_CERT);return {rejectUnauthorized:true,...(extra.length?{ca:[...rootCertificates,...extra]}:{})}})()});
+ pool=new Pool({connectionString:url.toString(),max:6,idleTimeoutMillis:20000,connectionTimeoutMillis:10000,ssl:(()=>{const extra=caCertificates(process.env.DATABASE_CA_CERT);return {rejectUnauthorized:true,...(extra.length?{ca:[...rootCertificates,...extra]}:{})}})()});
  return pool;
 }
-const driver:Queryable={async query(text,values){const client=await connection().connect();try{await client.query('BEGIN');await client.query('SET LOCAL search_path=logoped,public');await client.query("SET LOCAL statement_timeout='15s'");const result=await client.query(text,values);await client.query('COMMIT');return result}catch(e){await client.query('ROLLBACK');throw e}finally{client.release()}}};
+// One round trip per read. The database role carries search_path and statement_timeout itself
+// (ALTER ROLE ... SET ...). If it does not (e.g. a different role in DATABASE_URL), the first
+// "relation does not exist" switches to the transactional path that sets them per query.
+let roleConfigured=true;
+async function scoped(text:string,values?:any[]){const client=await connection().connect();try{await client.query('BEGIN');await client.query('SET LOCAL search_path=logoped,public');await client.query("SET LOCAL statement_timeout='15s'");const result=await client.query(text,values);await client.query('COMMIT');return result}catch(e){await client.query('ROLLBACK').catch(()=>{});throw e}finally{client.release()}}
+const driver:Queryable={async query(text,values){
+ if(roleConfigured){try{return await connection().query(text,values)}catch(e:any){if(e?.code!=='42P01'&&e?.code!=='42883')throw e;roleConfigured=false}}
+ return scoped(text,values);
+}};
 export const database={prepare:(text:string)=>new Statement(text,driver),async batch(statements:Statement[]){const client=await connection().connect();try{await client.query('BEGIN');await client.query('SET LOCAL search_path=logoped,public');await client.query("SET LOCAL statement_timeout='15s'");const results=[];for(const s of statements){const r=await client.query(postgresSQL(s.text),s.values);results.push({meta:{changes:r.rowCount??0}})}await client.query('COMMIT');return results}catch(e){await client.query('ROLLBACK');throw e}finally{client.release()}}};
