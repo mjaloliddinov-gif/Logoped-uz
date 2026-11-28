@@ -13,20 +13,26 @@ async function sendCode(chat:number,user:{id:string;email:string},greeting=''){
  await say(chat,text,site?{reply_markup:{inline_keyboard:[[{text:'🌐 Saytga kirish',url:site+'/login?code='+code}]]}}:{reply_markup:mainKeyboard});
  if(site)await say(chat,'Yangi kod kerak bo‘lsa, pastdagi «'+CODE_BUTTON+'» tugmasini bosing.',{reply_markup:mainKeyboard});
 }
-async function register(from:any,name:string,phone:string){
+const PARENT='👨‍👩‍👧 Ota-ona',LOGOPED='🩺 Logoped';
+async function register(from:any,name:string,phone:string,role:'parent'|'logoped'){
  const admin=adminAuth(),email=telegramEmail(from.id),now=new Date().toISOString();
  let userId:string|undefined;
- const created=await admin.createUser({email,email_confirm:true,user_metadata:{name,telegram_id:from.id,phone}});
+ const created=await admin.createUser({email,email_confirm:true,user_metadata:{name,telegram_id:from.id,phone,requestedRole:role}});
  if(created.data?.user)userId=created.data.user.id;
  else{const link=await admin.generateLink({type:'magiclink',email});userId=link.data?.user?.id;if(!userId)throw Error('user_not_created');}
  const db=database;
  await db.batch([
-  db.prepare("INSERT INTO members VALUES (?,?,'parent') ON CONFLICT(id) DO NOTHING").bind(userId,email),
-  putSetting('profile:'+userId,{name,phone,requestedRole:'parent',telegram:{id:from.id,username:clean(from.username,64)||undefined},submittedAt:now}),
+  // Parents are active at once; a logoped sees children's records, so the administrator approves that role first.
+  db.prepare('INSERT INTO members VALUES (?,?,?) ON CONFLICT(id) DO NOTHING').bind(userId,email,role==='parent'?'parent':'pending'),
+  putSetting('profile:'+userId,{name,phone,requestedRole:role,telegram:{id:from.id,username:clean(from.username,64)||undefined},submittedAt:now}),
   putSetting('tg:'+from.id,{user:userId,email}),
   dropSetting('tgstate:'+from.id),
   db.prepare('INSERT INTO audit VALUES (?,?,?,?,?)').bind(crypto.randomUUID(),userId,'telegram_registration',userId,now),
  ]);
+ if(role==='logoped'){
+  const admins=(await db.prepare("SELECT id FROM members WHERE role='admin'").all<{id:string}>()).results;
+  if(admins.length)await db.batch(admins.map(a=>db.prepare("INSERT INTO notifications VALUES (?,?,?,?,'0')").bind(crypto.randomUUID(),a.id,'Yangi logoped so‘rovi: '+name+' ('+phone+')',now)));
+ }
  return {id:userId,email};
 }
 export async function POST(req:Request){
@@ -45,23 +51,31 @@ export async function POST(req:Request){
   }
   const state=await setting('tgstate:'+from.id);
   if(text.startsWith('/start')||!state){
-   await putSetting('tgstate:'+from.id,{step:'name'}).run();
-   await say(chat,'Assalomu alaykum! <b>LOGOPED.UZ</b> ga xush kelibsiz.\n\nRo‘yxatdan o‘tish uchun <b>ismingiz va familiyangizni</b> yozing.\nMasalan: <i>Dilnoza Karimova</i>',{reply_markup:{remove_keyboard:true}});
+   await putSetting('tgstate:'+from.id,{step:'role'}).run();
+   await say(chat,'Assalomu alaykum! <b>LOGOPED.UZ</b> ga xush kelibsiz.\n\nSiz kimsiz? Pastdagi tugmalardan birini bosing.',{reply_markup:{keyboard:[[{text:PARENT}],[{text:LOGOPED}]],resize_keyboard:true,one_time_keyboard:true}});
+   return ok();
+  }
+  if(state.step==='role'){
+   const role=text===PARENT?'parent':text===LOGOPED?'logoped':null;
+   if(!role){await say(chat,'Iltimos, «'+PARENT+'» yoki «'+LOGOPED+'» tugmasini bosing.',{reply_markup:{keyboard:[[{text:PARENT}],[{text:LOGOPED}]],resize_keyboard:true,one_time_keyboard:true}});return ok()}
+   await putSetting('tgstate:'+from.id,{step:'name',role}).run();
+   await say(chat,'Ro‘yxatdan o‘tish uchun <b>ismingiz va familiyangizni</b> yozing.\nMasalan: <i>Dilnoza Karimova</i>',{reply_markup:{remove_keyboard:true}});
    return ok();
   }
   if(state.step==='name'){
    const name=clean(text,80);
    if(name.length<2||text.startsWith('/')){await say(chat,'Iltimos, ismingiz va familiyangizni matn bilan yozing.');return ok()}
-   await putSetting('tgstate:'+from.id,{step:'phone',name}).run();
-   await say(chat,'Rahmat, <b>'+name+'</b>!\n\nEndi pastdagi tugmani bosib, <b>telefon raqamingizni</b> yuboring. Logoped sizni shu raqam orqali taniydi.',{reply_markup:{keyboard:[[{text:'📱 Telefon raqamni yuborish',request_contact:true}]],resize_keyboard:true,one_time_keyboard:true}});
+   await putSetting('tgstate:'+from.id,{step:'phone',name,role:state.role==='logoped'?'logoped':'parent'}).run();
+   await say(chat,'Rahmat, <b>'+name+'</b>!\n\nEndi pastdagi tugmani bosib, <b>telefon raqamingizni</b> yuboring. '+(state.role==='logoped'?'Administrator sizni shu raqam orqali taniydi.':'Logoped sizni shu raqam orqali taniydi.')+'',{reply_markup:{keyboard:[[{text:'📱 Telefon raqamni yuborish',request_contact:true}]],resize_keyboard:true,one_time_keyboard:true}});
    return ok();
   }
   if(state.step==='phone'){
    const c=m.contact;
    if(!c||c.user_id!==from.id){await say(chat,'Iltimos, pastdagi «📱 Telefon raqamni yuborish» tugmasini bosing. Faqat o‘zingizning raqamingiz qabul qilinadi.');return ok()}
    const phone=clean(c.phone_number,20).replace(/[^\d+]/g,'');
-   const user=await register(from,clean(state.name,80),phone);
-   await sendCode(chat,user,'✅ Ro‘yxatdan o‘tdingiz!');
+   const role=state.role==='logoped'?'logoped':'parent';
+   const user=await register(from,clean(state.name,80),phone,role);
+   await sendCode(chat,user,role==='logoped'?'✅ So‘rovingiz qabul qilindi!\n\nAdministrator logoped ekaningizni tasdiqlagach, shu yerga xabar keladi va kabinetingiz to‘liq ochiladi.':'✅ Ro‘yxatdan o‘tdingiz!\n\nEndi uyga vazifalar, izohlar va baholar shu botga keladi.');
    return ok();
   }
   await dropSetting('tgstate:'+from.id).run();
