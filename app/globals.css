@@ -283,3 +283,9 @@ button.primary,a.primary{background-image:none}
 .school-daily{background:var(--turq-soft)!important;border:2px dashed var(--turq)!important;box-shadow:none!important}
 html[data-theme=dark] .school-feature{background:#18214a;box-shadow:0 7px 0 #0a1030}
 html,body{overflow-x:clip}
+.telegram-link{align-self:flex-start;color:#1a7fae;font-weight:800;text-decoration:underline;text-underline-offset:3px;word-break:break-all}
+.telegram-roles{color:var(--muted);font-weight:700}
+.telegram-login,.telegram-steps,.telegram-steps li{max-width:100%;min-width:0}
+.telegram-button,.telegram-code button{white-space:normal!important;text-align:center;max-width:100%;line-height:1.3}
+.telegram-steps strong{overflow-wrap:anywhere}
+@media(max-width:800px){.auth-page{grid-template-columns:minmax(0,1fr)}.auth-story,.auth-content{min-width:0;max-width:100%}}
