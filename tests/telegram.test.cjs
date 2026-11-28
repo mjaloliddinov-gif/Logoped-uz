@@ -12,6 +12,7 @@ function exec(text,v){
  if(text==='DELETE FROM settings WHERE id=?'){const had=settings.delete(v[0]);return {rows:[],rowCount:had?1:0}}
  if(text.startsWith("INSERT INTO members VALUES (?,?,'parent')")){if(!members.has(v[0]))members.set(v[0],{email:v[1],role:'parent'});return {rows:[],rowCount:1}}
  if(text.startsWith('INSERT INTO audit')){audit.push(v);return {rows:[],rowCount:1}}
+ if(text==='SELECT role FROM members WHERE id=?')return {rows:members.has(v[0])?[{role:members.get(v[0]).role}]:[]};
  if(text==="SELECT id FROM members WHERE role='admin'")return {rows:[...members].filter(([,m])=>m.role==='admin').map(([id])=>({id}))};
  if(text.startsWith('INSERT INTO notifications')){notes.push(v);return {rows:[],rowCount:1}}
  if(text==='INSERT INTO members VALUES (?,?,?) ON CONFLICT(id) DO NOTHING'){if(!members.has(v[0]))members.set(v[0],{email:v[1],role:v[2]});return {rows:[],rowCount:1}}
@@ -38,7 +39,7 @@ const signIn=async code=>(await login.POST(new Request('https://site.test/api/au
 (async()=>{
  ok((await update({text:'/start'},'wrong')).status,403,'webhook rejects a wrong secret');ok(sent.length,0);
  await update({text:'/start'});assert.match(last(),/Siz kimsiz/);n++;
- await update({text:'salom'});assert.match(last(),/tugmasini bosing/);n++;
+ await update({text:'salom'});assert.match(last(),/tugmalardan birini bosing/);n++;
  await update({text:'👨‍👩‍👧 Ota-ona'});assert.match(last(),/ismingiz va familiyangizni/);n++;
  await update({text:'A'});assert.match(last(),/matn bilan yozing/);n++;
  await update({text:'Dilnoza Karimova'});assert.match(last(),/telefon raqamingizni/);ok(sent[sent.length-1].body.reply_markup.keyboard[0][0].request_contact,true);
@@ -72,5 +73,14 @@ const signIn=async code=>(await login.POST(new Request('https://site.test/api/au
  assert.match(tn.describeRecord('task',{title:'Uy',status:'Bajarildi',answer:'qildik'},'Ali',false),/Vazifa bajarildi[\s\S]*qildik/);n++;
  const before2=sent.length;await tn.telegramPush([user.id,'no-telegram-user',user.id],'<b>salom</b>');
  const pushed=sent.slice(before2);ok(pushed.length,1,'one message, only to linked users');ok(pushed[0].body.chat_id,77);ok(pushed[0].body.parse_mode,'HTML');
+ // the role is part of every code message
+ await update({text:'/kod'});assert.match(sent[sent.length-2].body.text,/Siz <b>ota-ona<\/b> sifatida kirasiz/);n++;
+ // a student registers as pending and is told to open the logoped's invite link
+ await update({text:'/start'},undefined,99);assert.match(last(),/O‘quvchi/);n++;
+ await update({text:'🧒 O‘quvchi'},undefined,99);await update({text:'Ali Valiyev'},undefined,99);assert.match(last(),/Logopedingiz sizni/);n++;
+ const notesBefore=notes.length;await update({contact:{user_id:99,phone_number:'+998971234567'}},undefined,99);
+ const st=[...users.values()].find(u=>u.email==='tg99@telegram.logoped.uz');ok(members.get(st.id).role,'pending');ok(JSON.parse(settings.get('profile:'+st.id)).requestedRole,'student');ok(notes.length,notesBefore,'students do not notify the administrator');
+ assert.ok(sent.some(x=>/siz <b>o‘quvchi<\/b>siz[\s\S]*taklif havolasini/.test(x.body.text||'')));n++;
+ await update({text:'/kod'},undefined,99);assert.match(sent[sent.length-2].body.text,/o‘quvchi<\/b> sifatida ro‘yxatdan o‘tgansiz[\s\S]*taklif havolasini/);n++;
  console.log(n+' Telegram registration and code sign-in checks passed');
 })().catch(e=>{console.error(e);process.exit(1)});

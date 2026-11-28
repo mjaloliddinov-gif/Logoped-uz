@@ -13,8 +13,21 @@ async function sendCode(chat:number,user:{id:string;email:string},greeting=''){
  await say(chat,text,site?{reply_markup:{inline_keyboard:[[{text:'🌐 Saytga kirish',url:site+'/login?code='+code}]]}}:{reply_markup:mainKeyboard});
  if(site)await say(chat,'Yangi kod kerak bo‘lsa, pastdagi «'+CODE_BUTTON+'» tugmasini bosing.',{reply_markup:mainKeyboard});
 }
-const PARENT='👨‍👩‍👧 Ota-ona',LOGOPED='🩺 Logoped';
-async function register(from:any,name:string,phone:string,role:'parent'|'logoped'){
+const PARENT='👨‍👩‍👧 Ota-ona',STUDENT='🧒 O‘quvchi',LOGOPED='🩺 Logoped';
+type Role='parent'|'student'|'logoped';
+const roleKeyboard={reply_markup:{keyboard:[[{text:PARENT}],[{text:STUDENT}],[{text:LOGOPED}]],resize_keyboard:true,one_time_keyboard:true}};
+const roleOf=(v:unknown):Role=>v==='logoped'?'logoped':v==='student'?'student':'parent';
+const ROLE_NAMES:Record<string,string>={admin:'administrator',logoped:'logoped',parent:'ota-ona',student:'o‘quvchi'};
+/** "Siz logoped sifatida kirasiz" — so everyone sees which cabinet the code opens. */
+async function roleLine(userId:string){
+ const member=await database.prepare('SELECT role FROM members WHERE id=?').bind(userId).first<{role:string}>().catch(()=>null);
+ const profile=await setting('profile:'+userId).catch(()=>null),name=clean(profile?.name,80);
+ const hello='Assalomu alaykum'+(name?', <b>'+name+'</b>':'')+'!';
+ if(member?.role&&ROLE_NAMES[member.role])return hello+'\nSiz <b>'+ROLE_NAMES[member.role]+'</b> sifatida kirasiz.';
+ const wanted=ROLE_NAMES[profile?.requestedRole]||'foydalanuvchi';
+ return hello+'\nSiz <b>'+wanted+'</b> sifatida ro‘yxatdan o‘tgansiz. '+(profile?.requestedRole==='student'?'Logopedingiz bergan taklif havolasini oching — shundan keyin kabinetingiz ochiladi.':'Hisobingiz hali tasdiqlanmagan.');
+}
+async function register(from:any,name:string,phone:string,role:Role){
  const admin=adminAuth(),email=telegramEmail(from.id),now=new Date().toISOString();
  let userId:string|undefined;
  const created=await admin.createUser({email,email_confirm:true,user_metadata:{name,telegram_id:from.id,phone,requestedRole:role}});
@@ -45,19 +58,19 @@ export async function POST(req:Request){
  try{
   const link=await setting('tg:'+from.id),linked=link?{id:String(link.user),email:String(link.email)}:null;
   if(linked){
-   if(text.startsWith('/start')||text==='/kod'||text===CODE_BUTTON)await sendCode(chat,linked,text.startsWith('/start')?'Assalomu alaykum! Siz ro‘yxatdan o‘tgansiz.':'');
+   if(text.startsWith('/start')||text==='/kod'||text===CODE_BUTTON)await sendCode(chat,linked,await roleLine(linked.id));
    else await say(chat,'Saytga kirish uchun «'+CODE_BUTTON+'» tugmasini bosing.',{reply_markup:mainKeyboard});
    return ok();
   }
   const state=await setting('tgstate:'+from.id);
   if(text.startsWith('/start')||!state){
    await putSetting('tgstate:'+from.id,{step:'role'}).run();
-   await say(chat,'Assalomu alaykum! <b>LOGOPED.UZ</b> ga xush kelibsiz.\n\nSiz kimsiz? Pastdagi tugmalardan birini bosing.',{reply_markup:{keyboard:[[{text:PARENT}],[{text:LOGOPED}]],resize_keyboard:true,one_time_keyboard:true}});
+   await say(chat,'Assalomu alaykum! <b>LOGOPED.UZ</b> ga xush kelibsiz.\n\n<b>Siz kimsiz?</b> Pastdagi tugmalardan birini bosing:\n\n'+PARENT+' — farzandingizning vazifa va baholarini kuzatasiz\n'+STUDENT+' — logoped bergan mashqlarni bajarasiz\n'+LOGOPED+' — o‘quvchilar bilan ishlaysiz (administrator tasdiqlaydi)',roleKeyboard);
    return ok();
   }
   if(state.step==='role'){
-   const role=text===PARENT?'parent':text===LOGOPED?'logoped':null;
-   if(!role){await say(chat,'Iltimos, «'+PARENT+'» yoki «'+LOGOPED+'» tugmasini bosing.',{reply_markup:{keyboard:[[{text:PARENT}],[{text:LOGOPED}]],resize_keyboard:true,one_time_keyboard:true}});return ok()}
+   const role=text===PARENT?'parent':text===STUDENT?'student':text===LOGOPED?'logoped':null;
+   if(!role){await say(chat,'Iltimos, pastdagi tugmalardan birini bosing: «'+PARENT+'», «'+STUDENT+'» yoki «'+LOGOPED+'».',roleKeyboard);return ok()}
    await putSetting('tgstate:'+from.id,{step:'name',role}).run();
    await say(chat,'Ro‘yxatdan o‘tish uchun <b>ismingiz va familiyangizni</b> yozing.\nMasalan: <i>Dilnoza Karimova</i>',{reply_markup:{remove_keyboard:true}});
    return ok();
@@ -65,17 +78,17 @@ export async function POST(req:Request){
   if(state.step==='name'){
    const name=clean(text,80);
    if(name.length<2||text.startsWith('/')){await say(chat,'Iltimos, ismingiz va familiyangizni matn bilan yozing.');return ok()}
-   await putSetting('tgstate:'+from.id,{step:'phone',name,role:state.role==='logoped'?'logoped':'parent'}).run();
-   await say(chat,'Rahmat, <b>'+name+'</b>!\n\nEndi pastdagi tugmani bosib, <b>telefon raqamingizni</b> yuboring. '+(state.role==='logoped'?'Administrator sizni shu raqam orqali taniydi.':'Logoped sizni shu raqam orqali taniydi.')+'',{reply_markup:{keyboard:[[{text:'📱 Telefon raqamni yuborish',request_contact:true}]],resize_keyboard:true,one_time_keyboard:true}});
+   await putSetting('tgstate:'+from.id,{step:'phone',name,role:roleOf(state.role)}).run();
+   await say(chat,'Rahmat, <b>'+name+'</b>!\n\nEndi pastdagi tugmani bosib, <b>telefon raqamingizni</b> yuboring. '+(state.role==='logoped'?'Administrator sizni shu raqam orqali taniydi.':state.role==='student'?'Logopedingiz sizni shu raqam orqali taniydi.':'Logoped sizni shu raqam orqali taniydi.')+'',{reply_markup:{keyboard:[[{text:'📱 Telefon raqamni yuborish',request_contact:true}]],resize_keyboard:true,one_time_keyboard:true}});
    return ok();
   }
   if(state.step==='phone'){
    const c=m.contact;
    if(!c||c.user_id!==from.id){await say(chat,'Iltimos, pastdagi «📱 Telefon raqamni yuborish» tugmasini bosing. Faqat o‘zingizning raqamingiz qabul qilinadi.');return ok()}
    const phone=clean(c.phone_number,20).replace(/[^\d+]/g,'');
-   const role=state.role==='logoped'?'logoped':'parent';
+   const role=roleOf(state.role);
    const user=await register(from,clean(state.name,80),phone,role);
-   await sendCode(chat,user,role==='logoped'?'✅ So‘rovingiz qabul qilindi!\n\nAdministrator logoped ekaningizni tasdiqlagach, shu yerga xabar keladi va kabinetingiz to‘liq ochiladi.':'✅ Ro‘yxatdan o‘tdingiz!\n\nEndi uyga vazifalar, izohlar va baholar shu botga keladi.');
+   await sendCode(chat,user,role==='student'?'✅ Ro‘yxatdan o‘tdingiz — siz <b>o‘quvchi</b>siz!\n\nLogopedingizdan <b>taklif havolasini</b> so‘rang va uni oching. Shundan keyin vazifalaringiz va baholaringiz shu botga keladi.':role==='logoped'?'✅ So‘rovingiz qabul qilindi — siz <b>logoped</b> sifatida ro‘yxatdan o‘tdingiz!\n\nAdministrator logoped ekaningizni tasdiqlagach, shu yerga xabar keladi va kabinetingiz to‘liq ochiladi.':'✅ Ro‘yxatdan o‘tdingiz — siz <b>ota-ona</b>siz!\n\nLogoped yuborgan taklif havolasini oching. Shundan keyin farzandingizning uyga vazifalari, izohlari va baholari shu botga keladi.');
    return ok();
   }
   await dropSetting('tgstate:'+from.id).run();
