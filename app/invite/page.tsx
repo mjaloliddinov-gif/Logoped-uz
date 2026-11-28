@@ -7,7 +7,7 @@ export default function Invitation() { useLocale(); const [token, T] = useState(
     history.replaceState(null, '', '/invite');
 }
 else
-    t = sessionStorage.getItem('logoped_invite') || ''; T(t); fetch('/api/data').then(r => r.ok ? r.json() : null).then((d: any) => M(d?.me || null)).catch(() => S('Ulanishni tekshiring')).finally(() => L(true)); }, []); return <main className="admin-denied"><h1>{localize("Shaxsiy taklif")}</h1><p>{localize("Taklif yuborilgan elektron pochta bilan kirishingiz kerak. Bog\u2018lanish faqat tasdiqlaganingizdan keyin amalga oshadi.")}</p>{!loaded ? <p>{localize("Tekshirilmoqda\u2026")}</p> : !me ? <a className="primary" target="_top" href="/login">{localize("Hisobimga kirish")}</a> : <><p>{me.email}</p><button className="primary" disabled={busy || !token} onClick={async () => { B(true); try {
+    t = sessionStorage.getItem('logoped_invite') || ''; T(t); fetch('/api/data').then(r => r.ok ? r.json() : null).then((d: any) => M(d?.me || null)).catch(() => S('Ulanishni tekshiring')).finally(() => L(true)); }, []); return <main className="admin-denied"><h1>{localize("Shaxsiy taklif")}</h1><p>{localize("Avval hisobingizga kiring (ota-onalar Telegram bot orqali). So\u2018ng \u00ABTaklifni qabul qilish\u00BB tugmasini bosing.")}</p>{!loaded ? <p>{localize("Tekshirilmoqda\u2026")}</p> : !me ? <a className="primary" target="_top" href="/login">{localize("Hisobimga kirish")}</a> : <><p>{me.name || me.email}</p><button className="primary" disabled={busy || !token} onClick={async () => { B(true); try {
     const r = await fetch('/api/invites', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'accept', token }) });
     const d: any = await r.json();
     if (!r.ok)
